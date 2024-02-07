@@ -42,12 +42,12 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   private NodeMap nodes; // map of all graph nodes in the WARP graph (<name, Node>)
   private String name; // name of the WARP graph defining the workload
   private ArrayList<String> flowNamesInOriginalOrder = new ArrayList<>(); // array to hold names of
-                                                                          // flows to preserve their
+  private static String inputFileName1 = "StressTest.txt.";                                                                        // flows to preserve their
                                                                           // order
   private ArrayList<String> flowNamesInPriorityOrder = new ArrayList<>();
   // private FileManager fm;
 
-  WorkLoad(Double m, Double e2e, String inputFileName) {
+  WorkLoad(double m, double e2e, String inputFileName) {
     super(inputFileName);
     setDefaultParameters();
     minPacketReceptionRate = m; // use file manager passed to this object
@@ -796,4 +796,19 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     }
     return maxLength;
   }
+
+
+  public static void main(String[] args) {             //ADDED //execute method with appropriate m, e2e, and inputFileName values
+	WorkLoad wl = WorkLoad(0.9, 0.99, inputFileName1);
+	
+	wl.setFlowsInDMorder();  //set flows in deadline-monotonic order
+	ArrayList<String> nameOrder = wl.getFlowNamesInPriorityOrder();  //creates an arrayList of flow names in their DM order
+	
+	var viz = wl.visualization();
+	System.out.print(viz);
+	
+	String blah = viz.get(0); //first line 
+	//manipulate substrings
+  }
+	
 }
