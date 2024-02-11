@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package edu.uiowa.cs.warp;
 
 import edu.uiowa.cs.utilities.Utilities;
@@ -219,6 +217,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   }
 
   /**
+   * Sets flow name in orginal order.
    * @param flowNamesInOriginalOrder the flowNamesInOriginalOrder to set
    */
   public void setFlowNamesInOriginalOrder(ArrayList<String> flowNamesInOriginalOrder) {
@@ -226,6 +225,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   }
 
   /**
+   * Set flow names in priority order, sort secondary key then primary key.
    * @param flowNamesInPriorityOrder the flowNamesInPriorityOrder to set
    */
   public void setFlowNamesInPriorityOrder(ArrayList<String> flowNamesInPriorityOrder) {
@@ -306,7 +306,11 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     flowNode.linkTxAndTotalCost.add(DEFAULT_TX_NUM);
   }
 
-
+  /**
+   * retreives the priority of a flow.
+   * @param flowName The name of the flow to be retrieve
+   * @return An integer representing the priority of the specific flow.
+   */
   public Integer getFlowPriority(String flowName, String nodeName) {
     var priority = 0;
     var flow = getFlow(flowName);
@@ -320,7 +324,12 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     }
     return priority;
   }
-
+  
+  /**
+   * sets the priority of a specific flow.
+   * @param flowName the name of the flow to be set
+   * @param priority the priority value to be set for the specific flow. This represtns the priority level of the flow.
+   */
   public void setFlowPriority(String flowName, Integer priority) {
     var flowNode = getFlow(flowName);
     flowNode.setPriority(priority);
@@ -345,7 +354,12 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     var flowNode = getFlow(flowName);
     return flowNode.index;
   }
-
+  /**
+   * Retrieves the priority number of a specific flow.
+   * 
+   * @param flowName the name of the flow whoise priority is to be retrieve
+   * @return the integer representing the priority level of the flow.
+   */
   public Integer getFlowPriority(String flowName) {
     var flowNode = getFlow(flowName);
     return flowNode.getPriority();
@@ -355,7 +369,11 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     var flowNode = getFlow(flowName);
     return flowNode.getPeriod();
   }
-
+  /**
+   * retrieves the deadline of a specific flow
+   * @param flowName The name of the flow whose deadline to be retrieve.
+   * @param An integer represtning the dealine of the specific flow.
+   */
   public Integer getFlowDeadline(String flowName) {
     var flowNode = getFlow(flowName);
     return flowNode.getDeadline();
@@ -370,7 +388,10 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     var flowNode = getFlow(flowName);
     return flowNode.numTxPerLink;
   }
-
+  /**
+   * This method first sort the flow based on index, then primary key.
+   * It then stores the sorted flows into a new arraylist.
+   */
   public void setFlowsInPriorityOrder() {
     // create a list of Flow objects from the FlowMap using the stream interface.
     List<Flow> unsortedFlows = flows.values().stream().collect(Collectors.toList());
@@ -386,6 +407,10 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     sortedFlows.forEach((node) -> flowNamesInPriorityOrder.add(node.getName()));
   }
 
+  /**
+   * This method first sort the flows by secondary key, then by smallest deadline.
+   * Finally it stores sorted flow into a new arraylist.
+   */
   public void setFlowsInDMorder() {
     /* create a list of Flow objects from the FlowMap using the stream interface. */
     List<Flow> unsortedFlows = flows.values().stream().collect(Collectors.toList());
@@ -402,7 +427,10 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     flowNamesInPriorityOrder = new ArrayList<>();
     sortedFlows.forEach((node) -> flowNamesInPriorityOrder.add(node.getName()));
   }
-
+  /**
+   * This method first sort the flow by secondary key, then by shortest period.
+   * Finally it stores the sorted flow into a new arraylist.
+   */
   public void setFlowsInRMorder() {
     // create a list of Flow objects from the FlowMap using the stream interface.
     List<Flow> unsortedFlows = flows.values().stream().collect(Collectors.toList());
@@ -730,7 +758,11 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     }
     return index;
   }
-
+  /**
+   * Retrives an array of node names in the specific flow.
+   * @param flowName The name of the flow for which node names are retrieve
+   * @return A string array containing the name of the nodes in the specific flow.
+   */
   public String[] getNodesInFlow(String flowName) {
     // get the flow node for requested Flow and then loop through the
     // nodes in the flow to create an array of the node names in

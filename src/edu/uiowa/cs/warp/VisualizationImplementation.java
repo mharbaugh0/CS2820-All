@@ -1,5 +1,6 @@
 /**
- * 
+ * Implements Visualization interface to provide methods to display 
+ * visualization based on different workload choices and write them in files.
  */
 package edu.uiowa.cs.warp;
 
@@ -22,7 +23,12 @@ public class VisualizationImplementation implements Visualization {
   private WorkLoad workLoad = null;
   private VisualizationObject visualizationObject;
 
-
+/**
+ * Constructs a VisualizationImplementation object.
+ * @param warp The WarpInterface object providing system data.
+ * @param outputDirectory The path to the output directory for visualization files.
+ * @param choice The SystemChoices value indicate which visual to create.
+ */
   public VisualizationImplementation(WarpInterface warp, String outputDirectory,
       SystemChoices choice) {
     this.fm = new FileManager();
@@ -32,6 +38,13 @@ public class VisualizationImplementation implements Visualization {
     visualizationObject = null;
     createVisualization(choice);
   }
+  
+  /**
+   * Constructs VisualizationImplementation object,
+   * @param workLoad the workload object providing workload data.
+   * @param outputDirectory The path to the output directory for visualization files.
+   * @param choice The WokrLoadChoice value indicate the type of visual to create.
+   */
 
   public VisualizationImplementation(WorkLoad workLoad, String outputDirectory,
       WorkLoadChoices choice) {
@@ -42,6 +55,10 @@ public class VisualizationImplementation implements Visualization {
     visualizationObject = null;
     createVisualization(choice);
   }
+  /**
+   * Displays visual on GUI window.
+   * If window is not null, set the window to visible.
+   */
 
   @Override
   public void toDisplay() {
@@ -51,17 +68,25 @@ public class VisualizationImplementation implements Visualization {
       window.setVisible();
     }
   }
-
+/**
+ * Writes visual content to a file using FilesManager.
+ */
   @Override
   public void toFile() {
     fm.writeFile(fileName, fileContent.toString());
   }
-
+/**
+ * returns string representation of visualization.
+ * @return the string representation of visual description.
+ */
   @Override
   public String toString() {
     return visualization.toString();
   }
-
+/**
+ * creates a visualization based on SystemChoices
+ * @param choice The SystemChoices value indicate the type of visualization.
+ */
   private void createVisualization(SystemChoices choice) {
     switch (choice) { // select the requested visualization
       case SOURCE:
@@ -103,7 +128,11 @@ public class VisualizationImplementation implements Visualization {
         break;
     }
   }
-
+/**
+ * Creates a visulization based on WorkLoadChoices.
+ * 
+ * @param choice the WorkLoadChoices value to indicate the type of visualiztion.
+ */
   private void createVisualization(WorkLoadChoices choice) {
     switch (choice) { // select the requested visualization
       case COMUNICATION_GRAPH:
@@ -124,7 +153,12 @@ public class VisualizationImplementation implements Visualization {
         break;
     }
   }
-
+/**
+ * Creates a visualization object using the provided VisualizationObject instance.
+ * 
+ * @param obj the Visualization instance to create visualization from.
+ * @param <T> the type of parameter for the VisuzalizationObject.
+ */
   private <T extends VisualizationObject> void createVisualization(T obj) {
     visualization = obj.visualization();
     fileContent = obj.fileVisualization();
@@ -132,7 +166,12 @@ public class VisualizationImplementation implements Visualization {
     fileName = obj.createFile(fileNameTemplate); // in output directory
     visualizationObject = obj;
   }
-
+  /**
+   * Creates the file name template for output directory based on teh input file name.
+   * 
+   * @param outputDirectory The path to be output directory for visualization files.
+   * @return The file name template with the directory and input file name.
+   */
   private String createFileNameTemplate(String outputDirectory) {
     String fileNameTemplate;
     var workingDirectory = fm.getBaseDirectory();
