@@ -43,7 +43,7 @@ public class Channels {
   /**
    * Constructs a Channels object with a specific number of channels and verbosity setting.
    * @param nChannels The number of channels available.
-   * @param verbose A 
+   * @param verbose Indicates if verbose logging is enabled or not.
    */
   Channels(Integer nChannels, Boolean verbose) {
     this.nChannels = nChannels;
@@ -71,7 +71,7 @@ public class Channels {
 
   /**
    * Checks if the channel set at a specific time slot is empty.
-   * @param timeSlot 
+   * @param timeSlot The time slot to check.
    * @return True if the channel at the specific time slot is empty, false otherwise.
    */
   public Boolean isEmpty(int timeSlot) {
