@@ -63,6 +63,10 @@ public class Program implements SystemAttributes {
     this.deadlineMisses = new Description();
   }
 
+  /**
+   * delivers workload attributes as needed for warp by directing to set preferences 
+   * @return workLoad is a WorkLoad which directs the methods it is called upon
+   */
   public WorkLoad toWorkLoad() {
     return workLoad;
   }
@@ -1142,6 +1146,10 @@ public class Program implements SystemAttributes {
     scheduleBuilt = schedule;
   }
 
+  /**
+   * gets program schedule from setter method setSchedule
+   * @return scheduleBuilt is a ProgramSchedule containing the program schedule
+   */
   public ProgramSchedule getSchedule() {
     return scheduleBuilt;
   }
@@ -1202,6 +1210,11 @@ public class Program implements SystemAttributes {
     return workLoad.getNumFaults();
   }
 
+  /**
+   * creates a HashMap table of Strings and Integers which maps alphabetized 
+   * node names to their respective indices in the program schedule
+   * @return nodeIndexMap is a HashMap containing node names and their schedule indices
+   */
   public HashMap<String, Integer> getNodeMapIndex() {
     var orderedNodes = workLoad.getNodeNamesOrderedAlphabetically(); // create an array of node
                                                                      // names
