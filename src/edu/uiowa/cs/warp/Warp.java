@@ -34,6 +34,16 @@ import edu.uiowa.cs.warp.Visualization.WorkLoadChoices;
 
 
 /**
+ * Warp.java 
+ * Creates and visualizes elements of the WorkLoad class, 
+ * populates with appropriate system parameters and configuration values.
+ * 
+ * Can also create a channel scheduler and intercept/report schedule 
+ * conflicts as well as direct and report on flow reliability, deadlines.
+ * 
+ * Created by Steve Goddard
+ * Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
+ * 
  * @author sgoddard
  * @version 1.7
  *
@@ -74,6 +84,11 @@ public class Warp {
   private static ScheduleChoices schedulerSelected; // Scheduler requested
 
 
+  /**
+   * Accepts arguments to set system parameters, print out values if requested,
+   * and create/visualize a given workload, scheduler, and/or other items.  
+   * @param args is a string array provided to inform system choices and parameters
+   */
   public static void main(String[] args) {
     // parse command-line options and set WARP system parameters
     setWarpParameters(args);
@@ -134,6 +149,13 @@ public class Warp {
 
   }
 
+  
+  /**
+   * Checks for a request for a visualization, creates and displays it if request exists. 
+   * Method alternatively prints out information if verbose mode is on 
+   * @param workLoad sets and gets flow configurations
+   * @param choice informs WorkLoad specifications 
+   */
   private static void visualize(WorkLoad workLoad, WorkLoadChoices choice) {
     var viz =
         VisualizationFactory.createWorkLoadVisualization(workLoad, outputSubDirectory, choice);
@@ -148,6 +170,12 @@ public class Warp {
     }
   }
 
+  /**
+   * Checks for a request for a visualization of other types,
+   * creates and displays it if request exists.   
+   * @param warp is visualized by method, alternate option workload
+   * @param choice informs warp specifications
+   */
   private static void visualize(WarpInterface warp, SystemChoices choice) {
     var viz = VisualizationFactory.createProgramVisualization(warp, outputSubDirectory, choice);
     if (viz != null) {
@@ -159,12 +187,21 @@ public class Warp {
     }
   }
 
+  /**
+   * Verifies performance requirements, i.e. deadlines, reliabilities,
+   * and channel conflicts for warp using each requirement's discrete method
+   * @param warp contains flows for checking, visualization, etc.
+   */
   private static void verifyPerformanceRequirements(WarpInterface warp) {
     verifyDeadlines(warp);
     verifyReliabilities(warp);
     verifyNoChannelConflicts(warp);
   }
 
+  /**
+   * Verifies warp flow reliabilities
+   * @param warp contains flows for checking, visualization, etc.
+   */
   private static void verifyReliabilities(WarpInterface warp) {
     if (schedulerSelected != ScheduleChoices.RTHART) {
       /* RealTime HART doesn't adhere to reliability targets */
@@ -181,6 +218,10 @@ public class Warp {
     }
   }
 
+  /**
+   * Verifies warp flow deadlines
+   * @param warp contains flows for checking, visualization, etc.
+   */
   private static void verifyDeadlines(WarpInterface warp) {
     if (!warp.deadlinesMet()) {
       System.err.printf("\n\tERROR: Not all flows meet their deadlines under %s scheduling.\n",
@@ -192,6 +233,10 @@ public class Warp {
     }
   }
 
+  /**
+   * Verifies warp channel flow schedules do not conflict 
+   * @param warp contains flows for checking, visualization, etc.
+   */
   private static void verifyNoChannelConflicts(WarpInterface warp) {
     if (warp.toChannelAnalysis().isChannelConflict()) {
       System.err
@@ -204,6 +249,10 @@ public class Warp {
     }
   }
 
+  /**
+   * Accepts args to set warp parameters
+   * @param args is a string array provided to inform system choices
+   */
   private static void setWarpParameters(String[] args) { // move command line parsing into this
                                                          // function--need to set up globals?
 
@@ -337,6 +386,9 @@ public class Warp {
     }
   }
 
+  /**
+   * Prints system configuration parameters
+   */
   private static void printWarpParameters() { // print all system configuration parameters
     // Print out each of the system configuration values
     System.out.println("WARP system configuration values:");

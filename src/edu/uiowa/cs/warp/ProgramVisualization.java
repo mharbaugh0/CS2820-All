@@ -4,6 +4,15 @@
 package edu.uiowa.cs.warp;
 
 /**
+ * ProgramVisualization.java 
+ * Creates a visual representation of a given program schedule, 
+ * including title, footers, rows, columns, and the schedule data. 
+ * The visualization is handled by a superclass (VisualizationObject),
+ * which provides specific implementations for creating the necessary
+ * components based on the program's information.
+ * 
+ * Created by Steve Goddard
+ * Modified by Dell Harbaugh and Sixuan Liu 02/10/2024
  * @author sgoddard
  * @version 1.5
  * 
@@ -15,6 +24,11 @@ public class ProgramVisualization extends VisualizationObject {
   private Program program;
   private Boolean deadlinesMet;
 
+  /**
+   * sets program, sourceCode, and deadlinesMet using information obtained
+   * from warp
+   * @param warp provides specifications for visualization 
+   */
   ProgramVisualization(WarpInterface warp) {
     super(new FileManager(), warp, SOURCE_SUFFIX);
     this.program = warp.toProgram();
@@ -22,11 +36,19 @@ public class ProgramVisualization extends VisualizationObject {
     this.deadlinesMet = warp.deadlinesMet();
   }
 
+  /**
+   * @return visualization with title, column header, data added
+   */
   @Override
   public GuiVisualization displayVisualization() {
     return new GuiVisualization(createTitle(), createColumnHeader(), createVisualizationData());
   }
 
+  /**
+   * creates visualization header by retrieving and adding 
+   * title, scheduler name, and m value, E2E value, and number of channels.  
+   * @return header is a Description header for the visualization
+   */
   @Override
   protected Description createHeader() {
     Description header = new Description();
@@ -44,6 +66,10 @@ public class ProgramVisualization extends VisualizationObject {
     return header;
   }
 
+  /**
+   * creates visualization footer by retrieving and adding deadline status message  
+   * @return footer is a Description containing the relevant deadline status message
+   */
   @Override
   protected Description createFooter() {
     Description footer = new Description();
@@ -58,7 +84,12 @@ public class ProgramVisualization extends VisualizationObject {
     return footer;
   }
 
-
+  /**
+   * creates visualization column header, calls method to alphabetize node names,
+   * adds "Time Slot" to first index of column header, then node names in order 
+   * to subsequent indices
+   * @return columnNames is a String Array containing "Time Slot" and node names
+   */
   @Override
   protected String[] createColumnHeader() {
     var orderedNodes = program.toWorkLoad().getNodeNamesOrderedAlphabetically();
@@ -71,6 +102,11 @@ public class ProgramVisualization extends VisualizationObject {
     return columnNames;
   }
 
+  /**
+   * creates visualization by retrieving and placing column and row data
+   * in a String matrix
+   * @return visualizationData is a String matrix containing visualization data
+   */
   @Override
   protected String[][] createVisualizationData() {
     if (visualizationData == null) {
@@ -88,6 +124,10 @@ public class ProgramVisualization extends VisualizationObject {
     return visualizationData;
   }
 
+  /**
+   * creates title for visualization 
+   * @return String containing program title 
+   */
   private String createTitle() {
     return String.format("WARP program for graph %s\n", program.getName());
   }

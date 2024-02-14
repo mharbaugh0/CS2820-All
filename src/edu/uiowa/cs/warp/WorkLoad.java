@@ -47,6 +47,12 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   private ArrayList<String> flowNamesInPriorityOrder = new ArrayList<>();
   // private FileManager fm;
 
+  /**
+   * constructor which creates instance of class WorkLoad using default parameters
+   * @param m is a double which describes the packet reception rate 
+   * @param e2e is a double for minimum Link Quality in system 
+   * @param inputFileName is an input file name of type String
+   */
   WorkLoad(double m, double e2e, String inputFileName) {
     super(inputFileName);
     setDefaultParameters();
@@ -59,6 +65,14 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
     WorkLoadListener.buildNodesAndFlows(this);
   }
 
+  /**
+   * constructor which creates instance of class WorkLoad using default parameters
+   * and includes reported faults
+   * @param numFaults is the number of faults 
+   * @param m is a double which describes the packet reception rate
+   * @param e2e is a double for minimum Link Quality in system 
+   * @param inputFileName is an input file name of type String 
+   */
   WorkLoad(Integer numFaults, Double m, Double e2e, String inputFileName) {
     super(inputFileName);
     setDefaultParameters();
@@ -795,20 +809,6 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
       maxLength = Math.max(maxLength, flow.nodes.size());
     }
     return maxLength;
-  }
-
-
-  public static void main(String[] args) {             //ADDED //execute method with appropriate m, e2e, and inputFileName values
-	WorkLoad wl = WorkLoad(0.9, 0.99, inputFileName1);
-	
-	wl.setFlowsInDMorder();  //set flows in deadline-monotonic order
-	ArrayList<String> nameOrder = wl.getFlowNamesInPriorityOrder();  //creates an arrayList of flow names in their DM order
-	
-	var viz = wl.visualization();
-	System.out.print(viz);
-	
-	String blah = viz.get(0); //first line 
-	//manipulate substrings
   }
 	
 }
