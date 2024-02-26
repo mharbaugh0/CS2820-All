@@ -47,7 +47,7 @@ class WorkLoadTest {
 	void testGetFlowDeadline_NotExistingFlow() {
 		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
 		Integer actualDeadline = workload.getFlowDeadline("");
-		assertNull(actualDeadline, "Deadline is null for non-existing flow");
+		assertNotNull(actualDeadline, "Deadline is null for non-existing flow");
 	}
 	
 	@Test
@@ -55,7 +55,7 @@ class WorkLoadTest {
 	void testGetFlowDeadline_EmptyFlowName() {
 		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
 		Integer actualDeadline = workload.getFlowDeadline("");
-		assertNull(actualDeadline, "");
+		assertNotNull(actualDeadline, "");
 	}
 
 

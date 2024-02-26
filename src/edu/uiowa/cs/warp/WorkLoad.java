@@ -371,7 +371,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   /**
    * Retrieves the priority number of a specific flow.
    * 
-   * @param flowName the name of the flow whoise priority is to be retrieve
+   * @param flowName the name of the flow whose priority is to be retrieve
    * @return the integer representing the priority level of the flow.
    */
   public Integer getFlowPriority(String flowName) {
