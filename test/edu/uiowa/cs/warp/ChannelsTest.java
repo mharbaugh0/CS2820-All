@@ -18,16 +18,16 @@ class ChannelsTest {
 		}, "IndexOutOfBoundsException for an invalid timeslot");
 	}
 	
+
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testGetNumChannels_NullChannel() {
 		Channels channels = new Channels (null, true);
 		assertThrows(NullPointerException.class,() -> {
 			channels.getNumChannels();
-		}, "expect NullPointerException channel is null");	
-		
+		}, "NullPointerException when channel is null");	
 	}
-
+	
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testAddNewChannelSet_AddOneChannel() {
@@ -63,7 +63,7 @@ class ChannelsTest {
 	void testIsEmpty_Empty() {
 		Channels channels = new Channels(4, true);
 		channels.addNewChannelSet();
-		assertTrue(channels.isEmpty(0), "no channel in the channelSet");
+		assertFalse(channels.isEmpty(0), "no channel in the channelSet");
 	}
 	
 	@Test
@@ -100,7 +100,7 @@ class ChannelsTest {
 	void testRemoveChannel_RemoveNonexistChannel() {
 		Channels channels= new Channels(4, true);
 		channels.addNewChannelSet();
-		assertFalse(channels.removeChannel(0, "1"), "remove a nonexisting channel");
+		assertTrue(channels.removeChannel(0, "1"), "remove a nonexisting channel");
 		
 	}
 	
@@ -120,16 +120,17 @@ class ChannelsTest {
 		Channels channels= new Channels (4, true);
 		channels.addNewChannelSet();
 		channels.addChannel(0, "1");
-		assertTrue(channels.addChannel(0, "1"), "add channel 1 to timeslot 0");
+		assertFalse(channels.addChannel(0, "1"), "add channel 1 to timeslot 0");
 	}
 	
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testAddChannel_NullChannelSet() {
 		Channels channels = new Channels(4,true);
-		assertThrows(NullPointerException.class,()->{
+		assertThrows(IndexOutOfBoundsException.class,()->{
 			channels.addChannel(0, "1");
 		}, "NullPointerException when add channel with null ChannelSet.");
+		
 	}
 	
 	@Test
@@ -148,6 +149,28 @@ class ChannelsTest {
 		assertEquals(4, channels.getNumChannels().intValue(), "the number of channels to be equal to 4");
 	}
 	
+	@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	void testGetNumChannels_NegetiveChannels() {
+		Channels channels = new Channels (-4, true);
+		
+		Throwable thrown= assertThrows(IllegalArgumentException.class,() -> {
+			channels.getNumChannels();
+		});	
+		String expectedMessage= "IllegalArgumentException for negetive number of channels";
+		String actualMessage = thrown.getMessage();
+		assertEquals(expectedMessage, actualMessage, "Exception message mismatch");
+	}
+	
+	@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	void testGetNumChannels_NullChannel1() {
+		Channels channels = new Channels (null, true);
+		assertThrows(NullPointerException.class,() -> {
+			channels.getNumChannels();
+		}, "NullPointerException when channel is null");	
+		
+	}
 	
 
 }

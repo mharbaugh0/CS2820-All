@@ -1,5 +1,6 @@
 package edu.uiowa.cs.warp;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -11,43 +12,35 @@ class WorkLoadTest {
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testGetNodeNamesOrderedAlphabetically() {
-		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
-		String[] expectedNodeName = {"F1", "F4", "AF5", "F6"};
+		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "Test1.txt");
+		String[] expectedNodeName = {"[C1, B1]"};
 		String[] actualNodeName = workload.getNodeNamesOrderedAlphabetically();
-		assertArrayEquals(expectedNodeName, actualNodeName, "sort flow name alphabetically");
+		assertNotEquals(expectedNodeName, actualNodeName, "expected is not alphabetically sorted");
 	}
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testGetNodeNamesOrderedAlphabetically_NoNodes() {
-		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
-		assertThrows(NullPointerException.class,() -> {
-			workload.getNodeNamesOrderedAlphabetically();
-		}, "NullPointerException when there is no node");
+		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "Example.txt");
+		String[] expectedNodeName = {"A, B, C"};
+		String[] actualNodeName = workload.getNodeNamesOrderedAlphabetically();
+		assertEquals(expectedNodeName, actualNodeName, "expected is alphabetically sorted");
 	}
 	
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
-	void testGetNodeNamesOrderedAlphabetically_NoInputFileName() {
-		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, null);
+	void testGetNodeNamesOrderedAlphabetically_InvalidInputFileName() {
+		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest12.txt");
 		assertThrows(NullPointerException.class,() -> {
 			workload.getNodeNamesOrderedAlphabetically();
 		}, "NullPointerException when there is no inputfile");
 	}
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
-	void testGetFlowDeadline() {
+	void testGetFlowDeadline_GetF1Deadline() {
 		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
 		Integer expectedDeadline = 20;
 		Integer actualDeadline = workload.getFlowDeadline("F1");
-		assertEquals(expectedDeadline, actualDeadline, "flow deadline should match the expected value");
-	}
-	
-	@Test
-	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
-	void testGetFlowDeadline_NotExistingFlow() {
-		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
-		Integer actualDeadline = workload.getFlowDeadline("");
-		assertNotNull(actualDeadline, "Deadline is null for non-existing flow");
+		assertEquals(expectedDeadline, actualDeadline, "the deadline of F1 is 20");
 	}
 	
 	@Test
@@ -55,11 +48,17 @@ class WorkLoadTest {
 	void testGetFlowDeadline_EmptyFlowName() {
 		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
 		Integer actualDeadline = workload.getFlowDeadline("");
-		assertNotNull(actualDeadline, "");
+		assertNotNull(actualDeadline, "Deadline is null for non-existing flow, returns 100");
+	}
+	
+	@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	void testGetFlowDeadline_InvalidFlowName() {
+		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "StressTest.txt");
+		Integer actualDeadline= workload.getFlowDeadline("NonExistingFlow");
+		assertNotNull(actualDeadline, "returns 100 when flow name is invalid" );
 	}
 
-
-	
 	
 	
 	

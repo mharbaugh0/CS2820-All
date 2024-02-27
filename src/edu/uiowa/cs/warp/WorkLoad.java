@@ -386,7 +386,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   /**
    * retrieves the deadline of a specific flow
    * @param flowName The name of the flow whose deadline to be retrieve.
-   * @param An integer represtning the dealine of the specific flow.
+   * @param An integer representing the deadline of the specific flow.
    */
   public Integer getFlowDeadline(String flowName) {
     var flowNode = getFlow(flowName);
