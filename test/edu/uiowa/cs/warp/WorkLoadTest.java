@@ -21,9 +21,9 @@ class WorkLoadTest {
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	void testGetNodeNamesOrderedAlphabetically_NoNodes() {
 		WorkLoad workload = new WorkLoad(1, 0.9, 0.99, "Example.txt");
-		String[] expectedNodeName = {"A, B, C"};
+		String[] expectedNodeName= {"A","B","C"};
 		String[] actualNodeName = workload.getNodeNamesOrderedAlphabetically();
-		assertEquals(expectedNodeName, actualNodeName, "expected is alphabetically sorted");
+		assertArrayEquals(expectedNodeName, actualNodeName, "expected is alphabetically sorted");
 	}
 	
 	@Test

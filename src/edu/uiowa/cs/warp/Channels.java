@@ -114,6 +114,7 @@ public class Channels {
    */
   public Integer getNumChannels() {
     return nChannels;
+    
   }
 
 }
