@@ -8,16 +8,12 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 ##o7
 
-HW2 project work divide:
-Sixuan Liu: 
-1.WorkLoad part b-j
-2.VisualizationImplementation
-3.Channel
+HW3 project work division: 
 
-Dell Harbaugh:
-1.warp
-2.ChannelAnalysis 
-3.ProgramVisualization
-4.WorkLoad: Constructors. 
+Sixuan Liu:
+1. Channels.java a-f
+2. Workload.java i-j
+
+Dell Harbaugh: 1.Workload.java a-h 
 
 <br>
