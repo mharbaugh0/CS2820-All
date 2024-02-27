@@ -371,7 +371,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   /**
    * Retrieves the priority number of a specific flow.
    * 
-   * @param flowName the name of the flow whoise priority is to be retrieve
+   * @param flowName the name of the flow whose priority is to be retrieve
    * @return the integer representing the priority level of the flow.
    */
   public Integer getFlowPriority(String flowName) {
@@ -386,7 +386,7 @@ public class WorkLoad extends WorkLoadDescription implements ReliabilityParamete
   /**
    * retrieves the deadline of a specific flow
    * @param flowName The name of the flow whose deadline to be retrieve.
-   * @param An integer represtning the dealine of the specific flow.
+   * @param An integer representing the deadline of the specific flow.
    */
   public Integer getFlowDeadline(String flowName) {
     var flowNode = getFlow(flowName);
