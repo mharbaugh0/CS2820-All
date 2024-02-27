@@ -129,7 +129,7 @@ class ChannelsTest {
 		Channels channels = new Channels(4,true);
 		assertThrows(IndexOutOfBoundsException.class,()->{
 			channels.addChannel(0, "1");
-		}, "NullPointerException when add channel with null ChannelSet.");
+		}, "IndexOutOfBound when add channel with null ChannelSet.");
 		
 	}
 	
