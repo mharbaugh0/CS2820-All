@@ -38,6 +38,10 @@ public class ChannelAnalysis {
     conflictExists = false;
   }
 
+  ProgramSchedule getChannelAnalysisTable () {
+    throw NotImplementedException;
+  }
+
   /**
    * Checks for program channel conflicts 
    * @return boolean indicating if conflict exists 
