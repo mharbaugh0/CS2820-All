@@ -8,7 +8,6 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 ##o7
 
-HW5 project work division: 
-
+HW4 completed steps 1-17
 
 <br>
