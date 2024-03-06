@@ -8,12 +8,7 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 ##o7
 
-HW3 project work division: 
+HW5 project work division: 
 
-Sixuan Liu:
-1. Channels.java a-f
-2. Workload.java i-j
-
-Dell Harbaugh: 1.Workload.java a-h 
 
 <br>
