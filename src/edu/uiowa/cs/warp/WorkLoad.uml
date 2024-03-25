@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_IGnHwNwDEe6Na48VIg2zZA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_IGo88NwDEe6Na48VIg2zZA" source="codegen">
         <details xmi:id="_IGo88dwDEe6Na48VIg2zZA" key="codegenDirectory" value="/cs2820-spring24/src"/>
-        <details xmi:id="_LlpacNwDEe6Na48VIg2zZA" key="AssociatedSourceCode" value="/cs2820-spring24/src/edu/uiowa/cs/warp/AbstractMap.java;1424622298/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activation.java;1809359660/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activations.java;820905503/1;/cs2820-spring24/src/edu/uiowa/cs/warp/BasicPoset.java;2224306677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelAnalysis.java;387563407/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelVisualization.java;2819052397/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Channels.java;681255630/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CodeFragment.java;1317884368/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CombinedActivation.java;2029188156/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CommunicationGraph.java;1885349989/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ConnectivityPoset.java;79606901/1;/cs2820-spring24/src/edu/uiowa/cs/warp/DeadlineComparator.java;2664873414/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Description.java;1965213309/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Edge.java;3709953189/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FileManager.java;27414850/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Flow.java;1255836731/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowMap.java;4084289374/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowNodeToActivationMap.java;1064623610/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphViz.java;2298633738/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphVizListener.java;1295846020/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GuiVisualization.java;176383205/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InputGraphFile.java;1686457629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InstructionTimeSlot.java;888741420/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyAnalysis.java;2597620126/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyVisualization.java;3779818677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatestReleaseTimeComparator.java;459276445/1;/cs2820-spring24/src/edu/uiowa/cs/warp/MaxPhaseComparator.java;1826505669/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Node.java;1981269113/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NodeMap.java;1346116292/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NonPreemptiveSchedule.java;1765515208/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NotImplentedVisualization.java;4124722036/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PeriodComparator.java;3701604498/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Poset.java;1044364042/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PreemptiveSchedule.java;4276577887/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PriorityComparator.java;3500031587/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Program.java;3061567807/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramSchedule.java;1201325015/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramVisualization.java;4142619668/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeComparator.java;76739592/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeQueue.java;2628899863/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityAnalysis.java;1568853889/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityParameters.java;1809110799/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityRow.java;1058057599/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityTable.java;2292645629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityVisualization.java;929334119/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReportVisualization.java;392587375/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Row.java;2072540828/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObjectQueue.java;2628500970/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Schedule.java;240224972/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTable.java;820659454/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTime.java;3343049115/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SimulatorInput.java;3110368559/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SortedPeriodQueue.java;2370839513/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemAttributes.java;3931163786/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemFactory.java;1232525323/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Table.java;27306893/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Visualization.java;3371724965/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationFactory.java;1441226277/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationImplementation.java;1322037080/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationObject.java;1377291719/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpPoset.java;346020847/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpInterface.java;485526877/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpDSL.java;790761677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Warp.java;357128896/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpSystem.java;1549849953/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoad.java;2666592132/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadDescription.java;2405246373/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadListener.java;3074030464/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObject.java;987848086/1;/cs2820-spring24/test/edu/uiowa/cs/warp/WorkLoadTest.java;468439015/0;"/>
+        <details xmi:id="_LlpacNwDEe6Na48VIg2zZA" key="AssociatedSourceCode" value="/cs2820-spring24/src/edu/uiowa/cs/warp/AbstractMap.java;1424622298/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activation.java;1809359660/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activations.java;820905503/1;/cs2820-spring24/src/edu/uiowa/cs/warp/BasicPoset.java;2224306677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelAnalysis.java;1818024476/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelVisualization.java;2819052397/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Channels.java;681255630/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CodeFragment.java;1317884368/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CombinedActivation.java;2029188156/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CommunicationGraph.java;1885349989/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ConnectivityPoset.java;79606901/1;/cs2820-spring24/src/edu/uiowa/cs/warp/DeadlineComparator.java;2664873414/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Description.java;1965213309/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Edge.java;3709953189/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FileManager.java;27414850/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Flow.java;1255836731/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowMap.java;4084289374/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowNodeToActivationMap.java;1064623610/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphViz.java;2298633738/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphVizListener.java;1295846020/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GuiVisualization.java;176383205/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InputGraphFile.java;1686457629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InstructionTimeSlot.java;888741420/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyAnalysis.java;2597620126/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyVisualization.java;3779818677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatestReleaseTimeComparator.java;459276445/1;/cs2820-spring24/src/edu/uiowa/cs/warp/MaxPhaseComparator.java;1826505669/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Node.java;1981269113/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NodeMap.java;1346116292/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NonPreemptiveSchedule.java;1765515208/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NotImplentedVisualization.java;4124722036/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PeriodComparator.java;3701604498/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Poset.java;1044364042/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PreemptiveSchedule.java;4276577887/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PriorityComparator.java;3500031587/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Program.java;3061567807/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramSchedule.java;1201325015/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramVisualization.java;4142619668/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeComparator.java;76739592/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeQueue.java;2628899863/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityAnalysis.java;1568853889/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityParameters.java;1809110799/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityRow.java;1058057599/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityTable.java;2292645629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityVisualization.java;929334119/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReportVisualization.java;392587375/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Row.java;2072540828/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObjectQueue.java;2628500970/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Schedule.java;240224972/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTable.java;820659454/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTime.java;3343049115/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SimulatorInput.java;3110368559/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SortedPeriodQueue.java;2370839513/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemAttributes.java;3931163786/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemFactory.java;1232525323/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Table.java;27306893/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Visualization.java;3371724965/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationFactory.java;1441226277/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationImplementation.java;1322037080/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationObject.java;1377291719/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpPoset.java;346020847/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpInterface.java;485526877/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpDSL.java;790761677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Warp.java;357128896/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpSystem.java;1549849953/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoad.java;2666592132/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadDescription.java;2405246373/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadListener.java;3074030464/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObject.java;987848086/1;/cs2820-spring24/test/edu/uiowa/cs/warp/WorkLoadTest.java;2607381085/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_JfOWcOb5Ee6JlaXn3o2pCg" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_JfPkkOb5Ee6JlaXn3o2pCg" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_JfPkkeb5Ee6JlaXn3o2pCg" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_JfQLoOb5Ee6JlaXn3o2pCg" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="false"/>
+          <details xmi:id="_JfQLoeb5Ee6JlaXn3o2pCg" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_JY-ukNwDEe6Na48VIg2zZA">
@@ -749,16 +756,6 @@ local connectivity.
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_JhBQQNwDEe6Na48VIg2zZA" name="ChannelAnalysis">
-              <ownedComment xmi:id="_95oK0NwMEe62Lopl8BFG3A">
-                <body>ChannelAnalysis.java 
-Analyzes the warp and program channels for conflicts.
-
-Created by Steve Goddard
-Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
-@author sgoddard
-@version 1.7
- *</body>
-              </ownedComment>
               <ownedAttribute xmi:id="_KQWbcdwDEe6Na48VIg2zZA" name="program" visibility="private" type="_JkhQMNwDEe6Na48VIg2zZA" association="_KXj2sdwDEe6Na48VIg2zZA"/>
               <ownedAttribute xmi:id="_KQXpkNwDEe6Na48VIg2zZA" name="programTable" visibility="private" type="_JlHtINwDEe6Na48VIg2zZA" association="_KXkdwdwDEe6Na48VIg2zZA"/>
               <ownedAttribute xmi:id="_KQY3sNwDEe6Na48VIg2zZA" name="conflictExists" visibility="private">
@@ -770,9 +767,7 @@ Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
                   <name xsi:nil="true"/>
                 </ownedParameter>
                 <language>java</language>
-                <body>this.program = warp.toProgram();
- this.programTable = program.getSchedule();
- conflictExists = false;
+                <body>initializeProgram(warp.toProgram());
   </body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KUq6w9wDEe6Na48VIg2zZA" name="ChannelAnalysis" specification="_KI69wNwDEe6Na48VIg2zZA">
@@ -781,9 +776,7 @@ Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
                   <name xsi:nil="true"/>
                 </ownedParameter>
                 <language>java</language>
-                <body>this.program = program;
- this.programTable = program.getSchedule();
- conflictExists = false;
+                <body>initializeProgram(program);
   </body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KUrh0NwDEe6Na48VIg2zZA" name="isChannelConflict" specification="_JhDFcNwDEe6Na48VIg2zZA">
@@ -795,8 +788,22 @@ Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
                 <body>return conflictExists;
   </body>
               </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KEPIAOb5Ee6JlaXn3o2pCg" name="initializeProgram" specification="_KDLYEOb5Ee6JlaXn3o2pCg">
+                <ownedParameter xmi:id="_KEPIAeb5Ee6JlaXn3o2pCg" name="program" type="_JkhQMNwDEe6Na48VIg2zZA"/>
+                <language>java</language>
+                <body>this.program = program;
+   this.programTable = program.getSchedule();
+   this.conflictExists = false;
+  </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KEQWIOb5Ee6JlaXn3o2pCg" name="getChannelAnalysisTable" specification="_JOE0MNwFEe6Na48VIg2zZA">
+                <ownedParameter xmi:id="_KEQWIeb5Ee6JlaXn3o2pCg" type="_JlHtINwDEe6Na48VIg2zZA" direction="return"/>
+                <language>java</language>
+                <body>throw new UnsupportedOperationException(&quot;Feature incomplete.&quot;);
+  </body>
+              </ownedBehavior>
               <ownedOperation xmi:id="_JhDFcNwDEe6Na48VIg2zZA" name="isChannelConflict" method="_KUrh0NwDEe6Na48VIg2zZA">
-                <ownedComment xmi:id="_95pY8twMEe62Lopl8BFG3A">
+                <ownedComment xmi:id="_KEXq4ub5Ee6JlaXn3o2pCg">
                   <body>Checks for program channel conflicts 
    * @return boolean indicating if conflict exists</body>
                 </ownedComment>
@@ -804,33 +811,37 @@ Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_KI5voNwDEe6Na48VIg2zZA" name="ChannelAnalysis" visibility="package" method="_KUq6wNwDEe6Na48VIg2zZA">
+              <ownedOperation xmi:id="_KI5voNwDEe6Na48VIg2zZA" name="ChannelAnalysis" visibility="public" method="_KUq6wNwDEe6Na48VIg2zZA">
                 <eAnnotations xmi:id="_KI6WsNwDEe6Na48VIg2zZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                   <details xmi:id="_KI6WsdwDEe6Na48VIg2zZA" key="create"/>
                 </eAnnotations>
-                <ownedComment xmi:id="_95pY8NwMEe62Lopl8BFG3A">
-                  <body>Invokes current program to warp and programTable 
-with schedule from program.
-
+                <ownedComment xmi:id="_KEXD0Ob5Ee6JlaXn3o2pCg">
+                  <body>Inherits parameters from initialized program method to create constructor
 @param warp is a warp element from WarpInterface</body>
                 </ownedComment>
                 <ownedParameter xmi:id="_KI5vodwDEe6Na48VIg2zZA" name="warp" type="_JnRpQNwDEe6Na48VIg2zZA"/>
                 <ownedParameter xmi:id="_KI6WstwDEe6Na48VIg2zZA" type="_JhBQQNwDEe6Na48VIg2zZA" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_KI69wNwDEe6Na48VIg2zZA" name="ChannelAnalysis" visibility="package" method="_KUq6w9wDEe6Na48VIg2zZA">
+              <ownedOperation xmi:id="_KI69wNwDEe6Na48VIg2zZA" name="ChannelAnalysis" visibility="public" method="_KUq6w9wDEe6Na48VIg2zZA">
                 <eAnnotations xmi:id="_KI69wtwDEe6Na48VIg2zZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                   <details xmi:id="_KI69w9wDEe6Na48VIg2zZA" key="create"/>
                 </eAnnotations>
-                <ownedComment xmi:id="_95pY8dwMEe62Lopl8BFG3A">
-                  <body>Invokes current program with program and programTable
-  * with schedule method from program.
+                <ownedComment xmi:id="_KEXq4Ob5Ee6JlaXn3o2pCg">
+                  <body>Inherits parameters from initialized program method to create constructor
   * @param program is the program class for channel</body>
                 </ownedComment>
                 <ownedParameter xmi:id="_KI69wdwDEe6Na48VIg2zZA" name="program" type="_JkhQMNwDEe6Na48VIg2zZA"/>
                 <ownedParameter xmi:id="_KI69xNwDEe6Na48VIg2zZA" type="_JhBQQNwDEe6Na48VIg2zZA" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_JOE0MNwFEe6Na48VIg2zZA" name="getChannelAnalysisTable">
+              <ownedOperation xmi:id="_JOE0MNwFEe6Na48VIg2zZA" name="getChannelAnalysisTable" visibility="package" method="_KEQWIOb5Ee6JlaXn3o2pCg">
                 <ownedParameter xmi:id="_JOE0MdwFEe6Na48VIg2zZA" type="_JlHtINwDEe6Na48VIg2zZA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_KDLYEOb5Ee6JlaXn3o2pCg" name="initializeProgram" visibility="private" method="_KEPIAOb5Ee6JlaXn3o2pCg">
+                <ownedComment xmi:id="_KEXq4eb5Ee6JlaXn3o2pCg">
+                  <body>Initializing program with program and overriding the constructor
+   * @param program is the program class for channel</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_KDL_IOb5Ee6JlaXn3o2pCg" name="program" type="_JkhQMNwDEe6Na48VIg2zZA"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_JhGIwNwDEe6Na48VIg2zZA" name="ChannelVisualization">
@@ -13030,11 +13041,11 @@ Description object.
                 <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
 		ArrayList&lt;String> flowNamesInOriginalOrder = new ArrayList&lt;>();
 		flowNamesInOriginalOrder = workload.getFlowNamesInOriginalOrder();
-		
+
 		workload.setFlowNamesInPriorityOrder(flowNamesInOriginalOrder);
 		ArrayList&lt;String> arr2 = workload.getFlowNamesInPriorityOrder();
 		int arraySize = arr2.size();
-		
+
 		assertEquals(15, arraySize);
 		//fails if array is not the same size before and after reordering
 	</body>
@@ -13065,8 +13076,8 @@ Description object.
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KWXj4dwDEe6Na48VIg2zZA" name="testGetNodeChannel" specification="_JpvucNwDEe6Na48VIg2zZA">
                 <language>java</language>
                 <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
-		Integer testChannel = workload.getNodeChannel(&quot;A&quot;);    
-		assertFalse(testChannel &lt; 0);	
+		Integer testChannel = workload.getNodeChannel(&quot;A&quot;);
+		assertFalse(testChannel &lt; 0);
 		//fails if getNodeChannel returns a negative channel
 	</body>
               </ownedBehavior>
@@ -13096,8 +13107,8 @@ Description object.
                 <language>java</language>
                 <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;Example.txt&quot;);
 		String [] nodeList = workload.getNodesInFlow(&quot;F1&quot;);
-		assertEquals(3, nodeList.length);	
-		//fails if F1 nodes are not accurately represented 
+		assertEquals(3, nodeList.length);
+		//fails if F1 nodes are not accurately represented
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KWXj5dwDEe6Na48VIg2zZA" name="testMaxFlowLength" specification="_Jp0m8NwDEe6Na48VIg2zZA">
@@ -13105,7 +13116,54 @@ Description object.
                 <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
 		int testMax = workload.maxFlowLength();
 		assertFalse(testMax &lt; 0);
-		//fails if max flow length is negative
+		assertFalse(testMax > 1000);
+		//fails if max flow length is negative or greater than 1000
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KEQ9MOb5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically" specification="_KDkZoOb5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;Test1.txt&quot;);
+		String[] expectedNodeName = {&quot;[C1, B1]&quot;};
+		String[] actualNodeName = workload.getNodeNamesOrderedAlphabetically();
+		assertNotEquals(expectedNodeName, actualNodeName, &quot;expected is not alphabetically sorted&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KERkQOb5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically_NoNodes" specification="_KDm14Ob5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;Example.txt&quot;);
+		String[] expectedNodeName= {&quot;A&quot;,&quot;B&quot;,&quot;C&quot;};
+		String[] actualNodeName = workload.getNodeNamesOrderedAlphabetically();
+		assertArrayEquals(expectedNodeName, actualNodeName, &quot;expected is alphabetically sorted&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KESLUOb5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically_InvalidInputFileName" specification="_KDpSI-b5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest12.txt&quot;);
+		assertThrows(NullPointerException.class,() -> {
+			workload.getNodeNamesOrderedAlphabetically();
+		}, &quot;NullPointerException when there is no inputfile&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KESyYOb5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_GetF1Deadline" specification="_KDruYub5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
+		Integer expectedDeadline = 20;
+		Integer actualDeadline = workload.getFlowDeadline(&quot;F1&quot;);
+		assertEquals(expectedDeadline, actualDeadline, &quot;the deadline of F1 is 20&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KESyYeb5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_EmptyFlowName" specification="_KDvYwOb5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
+		Integer actualDeadline = workload.getFlowDeadline(&quot;&quot;);
+		assertNotNull(actualDeadline, &quot;Deadline is null for non-existing flow, returns 100&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KETZcOb5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_InvalidFlowName" specification="_KDxN9eb5Ee6JlaXn3o2pCg">
+                <language>java</language>
+                <body>WorkLoad workload = new WorkLoad(1, 0.9, 0.99, &quot;StressTest.txt&quot;);
+		Integer actualDeadline= workload.getFlowDeadline(&quot;NonExistingFlow&quot;);
+		assertNotNull(actualDeadline, &quot;returns 100 when flow name is invalid&quot; );
 	</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_JprdANwDEe6Na48VIg2zZA" name="testGetFlowNamesInPriorityOrder" visibility="package" method="_KWW80NwDEe6Na48VIg2zZA"/>
@@ -13116,6 +13174,12 @@ Description object.
               <ownedOperation xmi:id="_JpxjoNwDEe6Na48VIg2zZA" name="testSetFlowsInDMorder" visibility="package" method="_KWXj49wDEe6Na48VIg2zZA"/>
               <ownedOperation xmi:id="_JpyxxdwDEe6Na48VIg2zZA" name="testGetNodesInFlow" visibility="package" method="_KWXj5NwDEe6Na48VIg2zZA"/>
               <ownedOperation xmi:id="_Jp0m8NwDEe6Na48VIg2zZA" name="testMaxFlowLength" visibility="package" method="_KWXj5dwDEe6Na48VIg2zZA"/>
+              <ownedOperation xmi:id="_KDkZoOb5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically" visibility="package" method="_KEQ9MOb5Ee6JlaXn3o2pCg"/>
+              <ownedOperation xmi:id="_KDm14Ob5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically_NoNodes" visibility="package" method="_KERkQOb5Ee6JlaXn3o2pCg"/>
+              <ownedOperation xmi:id="_KDpSI-b5Ee6JlaXn3o2pCg" name="testGetNodeNamesOrderedAlphabetically_InvalidInputFileName" visibility="package" method="_KESLUOb5Ee6JlaXn3o2pCg"/>
+              <ownedOperation xmi:id="_KDruYub5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_GetF1Deadline" visibility="package" method="_KESyYOb5Ee6JlaXn3o2pCg"/>
+              <ownedOperation xmi:id="_KDvYwOb5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_EmptyFlowName" visibility="package" method="_KESyYeb5Ee6JlaXn3o2pCg"/>
+              <ownedOperation xmi:id="_KDxN9eb5Ee6JlaXn3o2pCg" name="testGetFlowDeadline_InvalidFlowName" visibility="package" method="_KETZcOb5Ee6JlaXn3o2pCg"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_KOFxoNwDEe6Na48VIg2zZA" name="T"/>
             <packagedElement xmi:type="uml:Class" xmi:id="_KOzjUNwDEe6Na48VIg2zZA" name="ScheduleLocation"/>
@@ -13750,10 +13814,10 @@ Description object.
     <annotations xmi:id="_JptSMdwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_JptSMtwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_Jpt5QNwDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P0NwDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEaHIub5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_Jpt5QdwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P0dwDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEauMOb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13762,10 +13826,10 @@ Description object.
     <annotations xmi:id="_JpugUdwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_JpugUtwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_JpugU9wDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P0twDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEauMeb5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_JpugVNwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P09wDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEauMub5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13774,10 +13838,10 @@ Description object.
     <annotations xmi:id="_JpvHYtwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_JpvHY9wDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_JpvHZNwDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P1NwDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVQOb5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_JpvHZdwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P1dwDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVQeb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13786,10 +13850,10 @@ Description object.
     <annotations xmi:id="_JpwVgNwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_JpwVgdwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_JpwVgtwDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0P1twDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVQub5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_JpwVg9wDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW024NwDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVQ-b5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13798,10 +13862,10 @@ Description object.
     <annotations xmi:id="_Jpw8kdwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_Jpw8ktwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_Jpw8k9wDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW024dwDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVROb5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_Jpw8lNwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW024twDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEbVReb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13810,10 +13874,10 @@ Description object.
     <annotations xmi:id="_JpyxwdwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_JpyxwtwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_Jpyxw9wDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW0249wDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEb8UOb5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_JpyxxNwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW025NwDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEb8Ueb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13822,10 +13886,10 @@ Description object.
     <annotations xmi:id="_Jpz_4twDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_Jpz_49wDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_Jpz_5NwDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW1d8NwDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEb8Uub5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_Jpz_5dwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW1d8dwDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEcjYOb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -13834,10 +13898,10 @@ Description object.
     <annotations xmi:id="_Jp1OAdwDEe6Na48VIg2zZA" name="Test"/>
     <annotations xmi:id="_Jp1OAtwDEe6Na48VIg2zZA" name="Timeout">
       <annotationParameters xmi:id="_Jp1OA9wDEe6Na48VIg2zZA" name="value" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW1d8twDEe6Na48VIg2zZA" value="5000"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEcjYeb5Ee6JlaXn3o2pCg" value="5000"/>
       </annotationParameters>
       <annotationParameters xmi:id="_Jp1OBNwDEe6Na48VIg2zZA" name="unit" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KW1d89wDEe6Na48VIg2zZA" value="TimeUnit.MILLISECONDS"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEcjYub5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -14373,5 +14437,76 @@ Description object.
   <UMLLabProfile:Patch xmi:id="_LlheoNwDEe6Na48VIg2zZA" base_Element="_Jme_ENwDEe6Na48VIg2zZA" patchText="@@ -109,18 +109,16 @@&#xA; eChoices&#xA;-()&#xA;  %7B%0A%09    &#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_LljT0NwDEe6Na48VIg2zZA" base_Element="_JmuPoNwDEe6Na48VIg2zZA" patchText="@@ -134,26 +134,24 @@&#xA; ystemChoices&#xA;-()&#xA;  %7B%0A    SOURC&#xA;@@ -269,18 +269,16 @@&#xA; dChoices&#xA;-()&#xA;  %7B%0A    I&#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_LloMUNwDEe6Na48VIg2zZA" base_Element="_JnnngNwDEe6Na48VIg2zZA" patchText="@@ -4029,22 +4029,25 @@&#xA; wf, ra)%0A&#xA;-public&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
-  <UMLLabProfile:Patch xmi:id="_8qs5kNwMEe62Lopl8BFG3A" base_Element="_JpqO4NwDEe6Na48VIg2zZA" patchText="@@ -21,16 +21,29 @@&#xA; .warp;%0A%0A&#xA;+%3C%3C%3C%3C%3C%3C%3C HEAD%0A&#xA; import s&#xA;@@ -3508,8 +3508,5711 @@&#xA; ve%0A%09%7D%0A%0A%7D&#xA;+%0A=======%0A%0Aimport static org.junit.jupiter.api.Assertions.*;%0A%0Aimport org.junit.jupiter.api.Test;%0Aimport org.junit.jupiter.api.Timeout;%0Aimport java.util.concurrent.TimeUnit;%0A%0Aimport java.util.ArrayList;%0A%0Aclass WorkLoadTest %7B%0A%09%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetNodeNamesOrderedAlphabetically() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22Test1.txt%22);%0A%09%09String%5B%5D expectedNodeName = %7B%22%5BC1, B1%5D%22%7D;%0A%09%09String%5B%5D actualNodeName = workload.getNodeNamesOrderedAlphabetically();%0A%09%09assertNotEquals(expectedNodeName, actualNodeName, %22expected is not alphabetically sorted%22);%0A%09%7D%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetNodeNamesOrderedAlphabetically_NoNodes() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22Example.txt%22);%0A%09%09String%5B%5D expectedNodeName= %7B%22A%22,%22B%22,%22C%22%7D;%0A%09%09String%5B%5D actualNodeName = workload.getNodeNamesOrderedAlphabetically();%0A%09%09assertArrayEquals(expectedNodeName, actualNodeName, %22expected is alphabetically sorted%22);%0A%09%7D%0A%09%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetNodeNamesOrderedAlphabetically_InvalidInputFileName() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest12.txt%22);%0A%09%09assertThrows(NullPointerException.class,() -%3E %7B%0A%09%09%09workload.getNodeNamesOrderedAlphabetically();%0A%09%09%7D, %22NullPointerException when there is no inputfile%22);%0A%09%7D%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetFlowDeadline_GetF1Deadline() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09Integer expectedDeadline = 20;%0A%09%09Integer actualDeadline = workload.getFlowDeadline(%22F1%22);%0A%09%09assertEquals(expectedDeadline, actualDeadline, %22the deadline of F1 is 20%22);%0A%09%7D%0A%09%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetFlowDeadline_EmptyFlowName() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09Integer actualDeadline = workload.getFlowDeadline(%22%22);%0A%09%09assertNotNull(actualDeadline, %22Deadline is null for non-existing flow, returns 100%22);%0A%09%7D%0A%09%0A%09@Test%0A%09@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetFlowDeadline_InvalidFlowName() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09Integer actualDeadline= workload.getFlowDeadline(%22NonExistingFlow%22);%0A%09%09assertNotNull(actualDeadline, %22returns 100 when flow name is invalid%22 );%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetFlowNamesInPriorityOrder() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09ArrayList%3CString%3E flowNamesInOriginalOrder = new ArrayList%3C%3E();%0A%09%09flowNamesInOriginalOrder = workload.getFlowNamesInOriginalOrder();%0A%0A%09%09workload.setFlowNamesInPriorityOrder(flowNamesInOriginalOrder);%0A%09%09ArrayList%3CString%3E arr2 = workload.getFlowNamesInPriorityOrder();%0A%09%09int arraySize = arr2.size();%0A%0A%09%09assertEquals(15, arraySize);%0A%09%09//fails if array is not the same size before and after reordering%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetMinPeriod() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09int testMin = workload.getMinPeriod();%0A%09%09assertFalse(testMin %3C 0);%0A%09%09assertFalse(testMin %3E 1000);%0A%09%09//fails if min period is negative or more than 1000%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testSetFlowNamesInOriginalOrder() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09ArrayList%3CString%3E flowNamesInOriginalOrder = new ArrayList%3C%3E();%0A%09%09flowNamesInOriginalOrder = workload.getFlowNamesInOriginalOrder();%0A%0A%09%09workload.setFlowsInDMorder();%0A%09%09String %5B%5D z1 = workload.getFlowNames();%0A%09%09workload.setFlowNamesInOriginalOrder(flowNamesInOriginalOrder);%0A%09%09String %5B%5D z2 = workload.getFlowNames();%0A%09%09assertFalse(z1.length != z2.length);%0A%09%09//fails if length of same set of flows sorted two different ways is unequal%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetNodeChannel() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09Integer testChannel = workload.getNodeChannel(%22A%22);%0A%09%09assertFalse(testChannel %3C 0);%0A%09%09//fails if getNodeChannel returns a negative channel%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testSetFlowsInPriorityOrder() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09workload.setFlowsInDMorder();%0A%09%09String %5B%5D w1 = workload.getFlowNames();%0A%09%09workload.setFlowsInPriorityOrder();%0A%09%09String %5B%5D w2 = workload.getFlowNames();%0A%09%09assertFalse(w1.length != w2.length);%0A%09%09//fails if length of same set of flows sorted two different ways is unequal%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testSetFlowsInDMorder() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09workload.setFlowsInDMorder();%0A%09%09String %5B%5D x1 = workload.getFlowNames();%0A%09%09workload.setFlowsInRMorder();%0A%09%09String %5B%5D x2 = workload.getFlowNames();%0A%09%09assertFalse(x1.length != x2.length);%0A%09%09//fails if length of same set of flows sorted two different ways is unequal%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testGetNodesInFlow() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22Example.txt%22);%0A%09%09String %5B%5D nodeList = workload.getNodesInFlow(%22F1%22);%0A%09%09assertEquals(3, nodeList.length);%0A%09%09//fails if F1 nodes are not accurately represented%0A%09%7D%0A%0A%09@Test%0A%09@Timeout(value = 5000, unit = TimeUnit.MILLISECONDS)%0A%09void testMaxFlowLength() %7B%0A%09%09WorkLoad workload = new WorkLoad(1, 0.9, 0.99, %22StressTest.txt%22);%0A%09%09int testMax = workload.maxFlowLength();%0A%09%09assertFalse(testMax %3C 0);%0A%09%09assertFalse(testMax %3E 1000);%0A%09%09//fails if max flow length is negative or greater than 1000%0A%09%7D%0A%09%0A%09%0A%09%0A%7D%0A%3E%3E%3E%3E%3E%3E%3E refs/remotes/origin/HW4%0A&#xA;" conflicting="false"/>
+  <UMLLabProfile:Annotations xmi:id="_KDlAsOb5Ee6JlaXn3o2pCg" base_Element="_KDkZoOb5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDlnwOb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDlnweb5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDmO0Ob5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEYR8Ob5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDmO0eb5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEYR8eb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_KDorEOb5Ee6JlaXn3o2pCg" base_Element="_KDm14Ob5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDorEeb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDpSIOb5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDpSIeb5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEYR8ub5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDpSIub5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEYR8-b5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_KDqgQOb5Ee6JlaXn3o2pCg" base_Element="_KDpSI-b5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDrHUOb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDrHUeb5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDruYOb5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEY5AOb5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDruYeb5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEY5Aeb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_KDuKoOb5Ee6JlaXn3o2pCg" base_Element="_KDruYub5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDuKoeb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDuxsOb5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDuxseb5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEZgEOb5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDuxsub5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEZgEeb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_KDxN8Ob5Ee6JlaXn3o2pCg" base_Element="_KDvYwOb5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDxN8eb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDxN8ub5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDxN8-b5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEZgEub5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDxN9Ob5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEZgE-b5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_KDzDIOb5Ee6JlaXn3o2pCg" base_Element="_KDxN9eb5Ee6JlaXn3o2pCg">
+    <annotations xmi:id="_KDzqMOb5Ee6JlaXn3o2pCg" name="Test"/>
+    <annotations xmi:id="_KDzqMeb5Ee6JlaXn3o2pCg" name="Timeout">
+      <annotationParameters xmi:id="_KDzqMub5Ee6JlaXn3o2pCg" name="value" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEaHIOb5Ee6JlaXn3o2pCg" value="2000"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_KDzqM-b5Ee6JlaXn3o2pCg" name="unit" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_KEaHIeb5Ee6JlaXn3o2pCg" value="TimeUnit.MILLISECONDS"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KD-pUOb5Ee6JlaXn3o2pCg" base_Element="_KDkZoOb5Ee6JlaXn3o2pCg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KD_QYOb5Ee6JlaXn3o2pCg" base_Element="_KDm14Ob5Ee6JlaXn3o2pCg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KD_3cOb5Ee6JlaXn3o2pCg" base_Element="_KDpSI-b5Ee6JlaXn3o2pCg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KEAegOb5Ee6JlaXn3o2pCg" base_Element="_KDruYub5Ee6JlaXn3o2pCg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KEBFkOb5Ee6JlaXn3o2pCg" base_Element="_KDvYwOb5Ee6JlaXn3o2pCg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_KEBsoOb5Ee6JlaXn3o2pCg" base_Element="_KDxN9eb5Ee6JlaXn3o2pCg"/>
 </xmi:XMI>

@@ -8,6 +8,9 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 ##o7
 
-HW4 completed steps 1-17
+HW5 distribution:
+Esteban - step 2
+Dell - step 3
+Matt - step 4
 
 <br>
