@@ -1,9 +1,13 @@
 package edu.uiowa.cs.warp;
 
-import edu.uiowa.cs.utilities.Utilities;
+import java.nio.channels.Channel;
 import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
+
+import edu.uiowa.cs.utilities.Utilities;
 
 
 /**
@@ -617,9 +621,9 @@ public class Program implements SystemAttributes {
                                                                                                    // or
                                                                                                    // 0
                   currentInstructionTimeSlot[nodeIndex.get(priorNodeName)] =
-                      waitInstruction(channel);; // an error finding the right location will result
-                                                 // in location of snk or 0 // was
-                                                 // upstreamNodeChannel
+                      waitInstruction(channel);// upstreamNodeChannel
+				// in location of snk or 0 // was
+				// an error finding the right location will result
                 } else if (newInstruction
                     .contains(elsePullClause(flowName, priorNodeName, currentNodeName, channel))
                     && currentInstructionTimeSlot[nodeIndex.get(priorNodeName)]
@@ -967,88 +971,67 @@ public class Program implements SystemAttributes {
   }
 
   private String findNextAvailableChannel(ProgramSchedule schedule, String nodeName,
-      Integer currentTime, Integer srcNodeIndex, Integer snkNodeIndex) {
+	      Integer currentTime, Integer srcNodeIndex, Integer snkNodeIndex) {
 
-    var newChannel = UNKNOWN; // indicates no channel was available. The caller will need to check
-                              // this result
+	    var newChannel = UNKNOWN; // indicates no channel was available. The caller will need to check this result
 
-    // create an instance of the Warp DSL class for parsing instructions
-    var dsl = new WarpDSL();
-    InstructionTimeSlot priorInstructionTimeSlot;
+	    // create an instance of the Warp DSL class for parsing instructions
+	    var dsl = new WarpDSL();
+	    InstructionTimeSlot priorInstructionTimeSlot;
 
-    var channels = channelsAvailable.getChannelSet(currentTime);
-    if (currentTime > 0) { // get the prior schedule time slot to see what channels were used in
-                           // that slot, which have to be avoided here
-      Integer priorTime = currentTime - 1;
-      priorInstructionTimeSlot = schedule.get(priorTime); // get a copy of the prior time slot
-      var srcPriorInstruction = priorInstructionTimeSlot.get(srcNodeIndex);
-      var snkPriorInstruction = priorInstructionTimeSlot.get(snkNodeIndex);
+	    var channels = channelsAvailable.getChannelSet(currentTime);
+	    if (currentTime > 0) { // get the prior schedule time slot to see what channels were used in
+	                           // that slot, which have to be avoided here
+	      Integer priorTime = currentTime - 1;
+	      priorInstructionTimeSlot = schedule.get(priorTime); // get a copy of the prior time slot
+	      var srcPriorInstruction = priorInstructionTimeSlot.get(srcNodeIndex);
+	      var snkPriorInstruction = priorInstructionTimeSlot.get(snkNodeIndex);
 
-      // extract the channels used by the src and snk nodes in the prior time slot and store them in
-      // an array
-      var instructionParametersArrayList = dsl.getInstructionParameters(srcPriorInstruction); // get
-                                                                                              // the
-                                                                                              // parameters
-                                                                                              // from
-                                                                                              // the
-                                                                                              // instruction
-                                                                                              // in
-                                                                                              // the
-                                                                                              // src
-                                                                                              // node's
-                                                                                              // prior
-                                                                                              // time
-                                                                                              // slot
-      for (int i = 0; i < instructionParametersArrayList.size(); i++) {
-        var instructionParameters = instructionParametersArrayList.get(i); // get a copy of the
-                                                                           // paramaters
-        channels.remove(instructionParameters.getChannel());
-      }
-      instructionParametersArrayList = dsl.getInstructionParameters(snkPriorInstruction); // get the
-                                                                                          // parameters
-                                                                                          // from
-                                                                                          // the
-                                                                                          // instruction
-                                                                                          // in the
-                                                                                          // snk
-                                                                                          // node's
-                                                                                          // prior
-                                                                                          // time
-                                                                                          // slot
-      for (int i = 0; i < instructionParametersArrayList.size(); i++) {
-        var instructionParameters = instructionParametersArrayList.get(i); // get a copy of the
-                                                                           // paramaters
-        channels.remove(instructionParameters.getChannel());
-      }
-    }
-    Integer channel = workLoad.getNodeChannel(nodeName); // get the last used channel for the node
-    channel++; // increment the channel because we don't use the same channel in consecutive time
-               // slots for the same node
-    if (channel >= getNumChannels()) { // valid range is 0..NumChannels-1. Reset when channel hits
-                                       // max
-      channel = 0;
-    }
-    var channelFound = false;
-    while (!channelFound && !channels.isEmpty()) { // loop until a channel is found or we run out of
-                                                   // channels to assign
-      var channelString = String.valueOf(channel);
-      var channelRemoved = channels.remove(channelString);
-      if (channelRemoved) {
-        // newChannel has the channel
-        newChannel = channelString;
-        channelFound = true;
-      } else {
-        // try another channel
-        channel += 1;
-        if (channel >= getNumChannels()) { // valid range is 0..NumChannels-1. Reset when channel
-                                           // hits max
-          channel = 0;
-        }
-      }
-    }
-    return newChannel; // returns UNKNOWN to indicate no channel found. This should never happen.
-  }
+	      // extract the channels used by the src and snk nodes in the prior time slot and store them in
+	      // an array
+	      var instructionParametersArrayList = dsl.getInstructionParameters(srcPriorInstruction); // get
+	                                                                                              // the
+		// parameters from the instruction in the src node's prior time slot
+	      removedChannels(instructionParametersArrayList, channels); // remove the channels used by the
+	      instructionParametersArrayList = dsl.getInstructionParameters(snkPriorInstruction); 
+	      removedChannels(instructionParametersArrayList,channels);
+	    }
+	    Integer channel = workLoad.getNodeChannel(nodeName); // get the last used channel for the node
+	    channel++; // increment the channel because we don't use the same channel in consecutive time
+	               // slots for the same node
+	    String nextChannel = channelScan(channel,channels);
+	    if (!nextChannel.equals(UNKNOWN)) {
+	      newChannel = nextChannel;
+	    }else {
+	      newChannel = channelScan(0,channels);
+	    }
+		return nextChannel;
+	 
+	  }
+  private String channelScan(Integer channel, HashSet<String> channels) {
+	    var channelFound = false;
+	    String newChannel = UNKNOWN;
+	    while (!channelFound && !channels.isEmpty()){
+	      var channelString = String.valueOf(channel);
+	      var channelRemoved = channels.remove(channelString);
+	      if (channelRemoved) {
+	        newChannel = channelString;
+	        channelFound = true;
+	      } else {
+	        channel += 1;
+	        if (channel >= getNumChannels()) {
+	          channel = 0;
+	        }
+	      }
+	    }
+	    return newChannel;
 
+	  }
+  private void removedChannels(ArrayList<WarpDSL.InstructionParameters>instructionParametersArraylist, HashSet<String> channels) {
+		    for (WarpDSL.InstructionParameters instructionParameters : instructionParametersArraylist) {
+		      channels.remove(instructionParameters.getChannel());
+		    }
+		  } 
   public void selectPriority() {
     setScheduleSelected(ScheduleChoices.PRIORITY);
   }

@@ -1,1 +1,1 @@
-INDEX VERSION 1.134+C:\Users\sixua\git\HW2-cs2820-mharbaugh\cs2820-mharbaugh\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.134+/Users/estebanmartinez/git/cs2820-mharbaugh/.metadata/.plugins/org.eclipse.jdt.core
