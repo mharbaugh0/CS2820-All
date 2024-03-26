@@ -10,6 +10,10 @@ package edu.uiowa.cs.warp;
  * @version 1.7
  *
  */
+
+// Use Eclipse to refactor the constructors of the ChannelAnalysis class to reduce code duplication.
+// Hint: this is a great example where you can call one constructor from the other using the call
+// this(), with the proper parameter. This was done as an example in Lecture 8 Inheritance.
 public class ChannelAnalysis {
 
   private Program program;
@@ -17,35 +21,38 @@ public class ChannelAnalysis {
   private Boolean conflictExists;
   
 /**
- * Invokes current program to warp and programTable 
- * with schedule from program.
- * 
+ * Inherits parameters from initialized program method to create constructor
  * @param warp is a warp element from WarpInterface
  */
-  ChannelAnalysis(WarpInterface warp) {
-    this.program = warp.toProgram();
-    this.programTable = program.getSchedule();
-    conflictExists = false;
+  public ChannelAnalysis(WarpInterface warp) {
+      initializeProgram(warp.toProgram());
   }
  /**
-  * Invokes current program with program and programTable
-  * with schedule method from program.
+  * Inherits parameters from initialized program method to create constructor
   * @param program is the program class for channel 
   */
-  ChannelAnalysis(Program program) {
-    this.program = program;
-    this.programTable = program.getSchedule();
-    conflictExists = false;
+  public ChannelAnalysis(Program program) {
+      initializeProgram(program);
+  }
+  /**
+   * Initializing program with program and overriding the constructor
+   * @param program is the program class for channel
+   */
+  private void initializeProgram(Program program) {
+      this.program = program;
+      this.programTable = program.getSchedule();
+      this.conflictExists = false;
   }
 
   ProgramSchedule getChannelAnalysisTable () {
-    throw NotImplementedException;
+	  throw new UnsupportedOperationException("Feature incomplete.");
   }
 
   /**
    * Checks for program channel conflicts 
    * @return boolean indicating if conflict exists 
    */
+  
   public Boolean isChannelConflict() {
     return conflictExists;
   }
