@@ -969,7 +969,15 @@ public class Program implements SystemAttributes {
     }
     return vacantSlot;
   }
-
+/**
+ * The method tries to find the next available channel for a node in a given schedule. 
+ * @param schedule Schedule for the program
+ * @param nodeName Name of the node
+ * @param currentTime The current slot
+ * @param srcNodeIndex The index for the source node
+ * @param snkNodeIndex The index for the sink node.
+ * @return It should return the available channel or if there is no channel it should return Unknown. 
+ */
   private String findNextAvailableChannel(ProgramSchedule schedule, String nodeName,
 	      Integer currentTime, Integer srcNodeIndex, Integer snkNodeIndex) {
 
@@ -1008,6 +1016,12 @@ public class Program implements SystemAttributes {
 		return nextChannel;
 	 
 	  }
+  /**
+   * 
+   * @param channel The channel to be remove.
+   * @param channels The channels to scan through to see what channel is available or even if there is a channel available. 
+   * @return Return the channel that is available or the if the channel is Unknown
+   */
   private String channelScan(Integer channel, HashSet<String> channels) {
 	    var channelFound = false;
 	    String newChannel = UNKNOWN;
@@ -1027,6 +1041,11 @@ public class Program implements SystemAttributes {
 	    return newChannel;
 
 	  }
+  /**
+   * This will remove the channel that is used in prior time to the channels that are available
+   * @param instructionParametersArraylist list of the parameter instructions
+   * @param channels The channels to scan through to see what channel is available or even if there is a channel available. 
+   */
   private void removedChannels(ArrayList<WarpDSL.InstructionParameters>instructionParametersArraylist, HashSet<String> channels) {
 		    for (WarpDSL.InstructionParameters instructionParameters : instructionParametersArraylist) {
 		      channels.remove(instructionParameters.getChannel());
