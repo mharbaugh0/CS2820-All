@@ -1,0 +1,41 @@
+title WARP Sequence Diagram
+
+participant Warp
+participant WorkLoad
+participant SystemFactory
+participant WarpInterface
+participant ChannelVisualization
+
+Warp -> Warp:set WARP system parameters
+Warp -> WorkLoad: Create WorkLoad\n(numFaults, minLQ, e2e, inputFile)
+loop for each WorkLoadChoices
+    WorkLoad -> WorkLoad: visualize(WorkLoad, choice)
+end
+
+alt allRequested
+    WorkLoad -> SystemFactory: Create Warp System
+    alt schedulerRequested
+        SystemFactory -> WarpInterface: create(workLoad, nChannels, schedulerSelected)
+        WarpInterface -> WarpInterface: verifyPerformanceRequirements(warp)
+        loop for each SystemChoices
+            WarpInterface -> WarpInterface: visualize(warp, choice)
+WarpInterface->ChannelVisualization:SOMETHING HERE
+        end
+    end
+    alt for each ScheduleChoices
+        SystemFactory -> WarpInterface: create(workLoad, nChannels, schedulerSelected)
+        WarpInterface -> WarpInterface: verifyPerformanceRequirements(warp)
+        loop for each SystemChoices
+            WarpInterface -> WarpInterface: visualize(warp, choice)
+WarpInterface->ChannelVisualization:SOMETHING HERE
+        end
+    end
+end
+
+WorkLoad -> Warp: visualize(workLoad, WorkLoadChoices.INPUT_GRAPH)
+alt wfRequested
+    WorkLoad -> Warp: visualize(workLoad, WorkLoadChoices.COMUNICATION_GRAPH)
+end
+alt gvRequested
+    WorkLoad -> Warp: visualize(workLoad, WorkLoadChoices.GRAPHVIZ)
+end
