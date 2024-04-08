@@ -34,3 +34,14 @@ and deliverables expected at each step. Identification of methods needed to be d
 - Weipeng: Step 5
 
 <br>
+In Sprint 1,
+ 
+Dell will be the maintainer for the project and the Scrum Master. The team will maintain a Google Doc to track tasks and assignments. Communication will be through Discord. Weipang will work on the sequence diagram, while Dell will handle the ReadMe file and task assignments. Matt and Esteban will review project plans and other files. They have also created a UML class diagram for Warp.java.
+
+Sprint 2 
+
+will see Xander managing the ReadMe file and design docs. Esteban will update the existing UML file for Warp. Dell and Matt will ensure code compliance with the Google style guide, with the team assisting as needed. Weipang will manage JUnit tests and ensure code functionality. Esteban will handle JavaDoc comments and update the UML diagram. Esteban and Xander will collaborate on the ReadMe file. Progress will be reviewed as a group.
+
+Sprint 3
+
+ will likely follow a similar process. The code will include new helper methods, and the team will collaborate to reduce the workload. Weipang will lead the JUnit tests, Matt will create JavaDoc comments for new methods, and Esteban will update the UML file. The team will update the ReadMe file to reflect their work.
