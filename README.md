@@ -15,8 +15,7 @@ the value of software development fundamentals!
 
 Diagrams and design documents for Sprint 1: 
 - UML Sequence Diagram showing program flow starting with Warp processing the ‘ca’ option, created using sequencediagram.org, located in the 'architecture' folder
-- Project plan documents (located in README and updated UML source files) outlining team roles, approximate timeline of sprints, tasks completed, tasks yet to be completed, 
-and deliverables expected at each step. 
+- Project plan documents (located in README, 'doc' folder, and updated UML source files) outlining team roles, approximate timeline of sprints, tasks completed, tasks yet to be completed, and deliverables expected at each step. 
 
 <b> Sprint 2 distribution: </b>
 
