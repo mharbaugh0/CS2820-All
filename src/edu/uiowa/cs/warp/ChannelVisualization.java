@@ -49,7 +49,10 @@ public class ChannelVisualization extends VisualizationObject {
   @Override
   public GuiVisualization displayVisualization() {
       return new GuiVisualization(createTitle(), createColumnHeader(), createVisualizationData());
+  }
       @Override
+      
+      
   protected Description createHeader() {
     	  Description header = new Description();
     	  header.add(createTitle());
@@ -57,7 +60,6 @@ public class ChannelVisualization extends VisualizationObject {
           // creating header
           return header;
       }
-      
       
    @Override
    protected Description createFooter() {
@@ -71,7 +73,7 @@ public class ChannelVisualization extends VisualizationObject {
 	    }
 	    footer.add(String.format("// %s", deadlineMsg));
 	    return footer;
-   
+   }
    @Override
    protected String[] createColumnHeader() {
        // create header
