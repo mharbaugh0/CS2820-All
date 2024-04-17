@@ -25,6 +25,8 @@ Diagrams and design documents for Sprint 1:
 - Esteban: Step 4
 - All: Step 1&6
 
+Diagrams and design documents for Sprint 2: 
+
 <b> Sprint 3 distribution: </b>
 
 - Esteban: Step 2
