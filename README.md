@@ -10,7 +10,7 @@ the value of software development fundamentals!
 <b> Sprint 1 distribution: </b>
 
 - Dell: Step 1
-- Xander and Weipeng: Step 2
+- Weipeng: Step 2
 - Matt and Esteban: Step 3
 
 Diagrams and design documents for Sprint 1: 
@@ -20,10 +20,10 @@ Diagrams and design documents for Sprint 1:
 <b> Sprint 2 distribution: </b>
 
 - Weipeng: Step 5
-- Matt and Dell: Step 3
-- Esteban: Step 2&4
-- Xander:
-- All: Step 6
+- Matt: Step 3
+- Dell: Step 2&3
+- Esteban: Step 4
+- All: Step 1&6
 
 <b> Sprint 3 distribution: </b>
 
@@ -39,8 +39,8 @@ Dell will be the maintainer for the project and the Scrum Master. The team will 
 
 Sprint 2 
 
-will see Xander managing the ReadMe file and design docs. Esteban will update the existing UML file for Warp. Dell and Matt will ensure code compliance with the Google style guide, with the team assisting as needed. Weipang will manage JUnit tests and ensure code functionality. Esteban will handle JavaDoc comments and update the UML diagram. Esteban and Xander will collaborate on the ReadMe file. Progress will be reviewed as a group.
+will see everyone managing the ReadMe file and design docs. Dell will update the existing UML file for Warp. Dell and Matt will ensure code compliance with the Google style guide, with the team assisting as needed. Weipeng will manage JUnit tests and ensure code functionality. Esteban will handle JavaDoc comments and update the UML diagram. Progress will be reviewed as a group.
 
 Sprint 3
 
- will likely follow a similar process. The code will include new helper methods, and the team will collaborate to reduce the workload. Weipang will lead the JUnit tests, Matt will create JavaDoc comments for new methods, and Esteban will update the UML file. The team will update the ReadMe file to reflect their work.
+will likely follow a similar process. The code will include new helper methods, and the team will collaborate to reduce the workload. Weipeng and Dell will lead the JUnit tests, Matt will create JavaDoc comments for new methods, and Esteban will update the UML file. The team will update the ReadMe file to reflect their work.
