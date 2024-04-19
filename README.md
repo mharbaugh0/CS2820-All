@@ -7,15 +7,6 @@ hack, and it needs a lot of cleanup and refactoring. A perfect code base to teac
 the value of software development fundamentals!
 ~ software development is cool ~ 
 
-<b> Sprint 1 distribution: </b>
-
-- Dell: Step 1
-- Weipeng: Step 2
-- Matt and Esteban: Step 3
-
-Diagrams and design documents for Sprint 1: 
-- UML Sequence Diagram showing program flow starting with Warp processing the ‘ca’ option, created using sequencediagram.org, located in the 'architecture' folder
-- Project plan documents (located in README, 'doc' folder, and updated UML source files) outlining team roles, approximate timeline of sprints, tasks completed, tasks yet to be completed, and deliverables expected at each step. 
 
 <b> Sprint 2 distribution: </b>
 
@@ -27,22 +18,18 @@ Diagrams and design documents for Sprint 1:
 
 Diagrams and design documents for Sprint 2: 
 
-<b> Sprint 3 distribution: </b>
 
-- Esteban: Step 2
-- Xander and Dell: Step 3
-- Matt: Step 4
-- Weipeng: Step 5
 
 <br>
-In Sprint 1,
- 
-Dell will be the maintainer for the project and the Scrum Master. The team will maintain a Google Doc to track tasks and assignments. Communication will be through Discord. Weipang will work on the sequence diagram, while Dell will handle the ReadMe file and task assignments. Matt and Esteban will review project plans and other files. They have also created a UML class diagram for Warp.java.
+For Sprint 2, Matt and Dell designed the algorithm for the implementation of the ChannelVisualization class by overriding the following methods in visualizationObject abstract class:
 
-Sprint 2 
 
-will see everyone managing the ReadMe file and design docs. Dell will update the existing UML file for Warp. Dell and Matt will ensure code compliance with the Google style guide, with the team assisting as needed. Weipeng will manage JUnit tests and ensure code functionality. Esteban will handle JavaDoc comments and update the UML diagram. Progress will be reviewed as a group.
+- createHeader(), which now creates a description object that contains the title and correct formatting.
 
-Sprint 3
+- createFooter(), which also creates a description object that contains a message indicating whether the deadlines were met.
+- createColumnHeader(), which returns a string array consisting of the time slots
 
-will likely follow a similar process. The code will include new helper methods, and the team will collaborate to reduce the workload. Weipeng and Dell will lead the JUnit tests, Matt will create JavaDoc comments for new methods, and Esteban will update the UML file. The team will update the ReadMe file to reflect their work.
+- createVisualizationData(), which creates a 2 dimensional array containing the data from the program and schedule objects.
+- displayVisualization: The methods createcolumnHeader(), and createVisualizationData() are designed to fit the parameters of the GuiVisualization constructor, and this is then used to override displayVisualization(). A method for generating the title in the specified format (createTitle())
+
+Weipeng developed the jUnit tests for these methods, ensuring their design and implementation, while Esteban updated the uml diagrams for the workLoad and Channel classes, as well as developed javadoc comments for the methods listed above.
