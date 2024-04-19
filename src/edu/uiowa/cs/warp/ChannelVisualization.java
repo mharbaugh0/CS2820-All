@@ -11,6 +11,7 @@ package edu.uiowa.cs.warp;
  * @version 1.7
  *
  */
+
 public class ChannelVisualization extends VisualizationObject {
 
   private static final String SOURCE_SUFFIX = ".ch";
@@ -18,7 +19,7 @@ public class ChannelVisualization extends VisualizationObject {
   private WarpInterface warp;
   private ChannelAnalysis ca;
   
-  
+ 
   private ProgramSchedule sourceCode;
   /**
    * the warp program instance
@@ -34,7 +35,10 @@ public class ChannelVisualization extends VisualizationObject {
    */
   private ProgramSchedule schedule;
   
-
+/**
+ * 
+ * @param warp is a warp element from WarpInterfac
+ */
   ChannelVisualization(WarpInterface warp) {
     super(new FileManager(), warp, SOURCE_SUFFIX);
     this.warp = warp;
@@ -44,7 +48,11 @@ public class ChannelVisualization extends VisualizationObject {
     this.schedule = program.getSchedule();
     
     
-    
+ /**
+  * The method is used to call the value of other methods in this class creating an object which
+  * can be used to display a chart. 
+  * @return GuiVisualization that can be used to make a chart
+  */
   }
   @Override
   public GuiVisualization displayVisualization() {
@@ -52,7 +60,10 @@ public class ChannelVisualization extends VisualizationObject {
   }
       @Override
       
-      
+ /**
+  * The following method is used to create a header for the chart. 
+  * @return createHeader is used to make the header for the chart
+  */
   protected Description createHeader() {
     	  Description header = new Description();
     	  header.add(createTitle());
@@ -60,7 +71,10 @@ public class ChannelVisualization extends VisualizationObject {
           // creating header
           return header;
       }
-      
+/**
+ * This method is used to make the footer for the chart displaying the data. 
+ * @return createFooter creates the footer for the chart
+ */
    @Override
    protected Description createFooter() {
 	    Description footer = new Description();
@@ -74,6 +88,10 @@ public class ChannelVisualization extends VisualizationObject {
 	    footer.add(String.format("// %s", deadlineMsg));
 	    return footer;
    }
+  /**
+   * the method creates the column header for the chart. It dynamically changes depending on the size.
+   * @return createColumnHeader create 
+   */
    @Override
    protected String[] createColumnHeader() {
        
@@ -90,7 +108,10 @@ public class ChannelVisualization extends VisualizationObject {
 
    
    
-   
+/**
+ * This method deals with the data involved in the chart. It checks if the chart is empty or not.
+ * @return createVisualizationData
+ */
    @Override
    protected String[][] createVisualizationData() {
        // Generate visualization data from table in Channel analysis
@@ -111,7 +132,10 @@ public class ChannelVisualization extends VisualizationObject {
        }
        return visualizationData;
    }
-
+/**
+ * This method creates the title depending on the file name. 
+ * @return createTitle takes the name of the file 
+ */
    private String createTitle() {
 	   return String.format("Channel Analysis for graph: %s\n", program.getName());    
    }
