@@ -1,0 +1,7 @@
+WARP_TestBug{
+// M = 1.0 and End-to-End reliability = 1.0
+// Flow F0 has a minimum communication cost of 1 and a worst-case communication cost of 1
+ F0 (1,12,8,0) : A -1-> B
+// Flow F1 has a minimum communication cost of 3 and a worst-case communication cost of 3
+ F1 (2,12,8,0) : C -1-> D -1-> E -1-> F
+}

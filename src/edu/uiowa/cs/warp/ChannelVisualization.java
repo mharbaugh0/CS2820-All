@@ -76,8 +76,16 @@ public class ChannelVisualization extends VisualizationObject {
    }
    @Override
    protected String[] createColumnHeader() {
-       // create header
-       return new String[]{"Time Slot", /* Other headers if needed */};
+       
+       int numChannels = program.getNumChannels();
+
+       
+       String[] headers = new String[numChannels + 1 ];  
+       headers[0] = "Time Slot";
+       for (int i = 1; i <= numChannels; i++) {
+           headers[i] = "Channel " + i;
+       }
+       return headers;
    }
 
    
@@ -91,11 +99,13 @@ public class ChannelVisualization extends VisualizationObject {
        
            int numColumns = schedule.getNumRows();
            visualizationData = new String[numRows][numColumns + 1];
+           
 
            for (int row = 0; row < numRows; row++) {
                visualizationData[row][0] = String.format("%s", row);
                for (int column = 0; column < numColumns; column++) {
                    visualizationData[row][column + 1] = schedule.get(row, column);
+                
                }
            }
        }
@@ -103,7 +113,7 @@ public class ChannelVisualization extends VisualizationObject {
    }
 
    private String createTitle() {
-	   return String.format("Channel Analysis for Program: %s\n", program.getName());    
+	   return String.format("Channel Analysis for graph: %s\n", program.getName());    
    }
 }
 
