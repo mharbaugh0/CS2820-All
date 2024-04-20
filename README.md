@@ -10,18 +10,17 @@ the value of software development fundamentals!
 
 <b> Sprint 2 distribution: </b>
 
-- Weipeng: Step 5
-- Matt: Step 3
-- Dell: Step 2&3
-- Esteban: Step 4
+- Weipeng:(illness)
+- Matt: Step 3 
+- Dell: Step 2& 5
+- Esteban: Step 4 & 3
 - All: Step 1&6
 
 Diagrams and design documents for Sprint 2: 
 
 
-
 <br>
-For Sprint 2, Matt and Dell designed the algorithm for the implementation of the ChannelVisualization class by overriding the following methods in visualizationObject abstract class:
+For Sprint 2, Matt and Esteban designed the algorithm for the implementation of the ChannelVisualization class by overriding the following methods in visualizationObject abstract class:
 
 
 - createHeader(), which now creates a description object that contains the title and correct formatting.
@@ -32,6 +31,8 @@ For Sprint 2, Matt and Dell designed the algorithm for the implementation of the
 - createVisualizationData(), which creates a 2 dimensional array containing the data from the program and schedule objects.
 - displayVisualization: The methods createcolumnHeader(), and createVisualizationData() are designed to fit the parameters of the GuiVisualization constructor, and this is then used to override displayVisualization(). 
 <br>
-A method for generating the title in the specified format (createTitle()) is also implemented.
+- A method for generating the title in the specified format (createTitle()) is also implemented.
 <br>
-Weipeng developed the jUnit tests for these methods, ensuring their design and implementation, while Esteban updated the uml diagrams for the workLoad and Channel classes, as well as developed javadoc comments for the methods listed above.
+- Dell developed the jUnit tests for these methods, ensuring their design and implementation, while Esteban updated the uml diagrams for the workLoad and Channel classes, as well as developed javadoc comments for the methods listed above.
+
+- We are not sure if the graph is showing properly so we may need to fix that in the next sprint
