@@ -10,11 +10,28 @@ import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 
 class ChannelVisualizationTest {
-	private WarpInterface warp;
+	  private static final String SOURCE_SUFFIX = ".ch";
+	  private static final String OBJECT_NAME = "Channel Analysis";
+	  private ChannelAnalysis ca;
+	  private ProgramSchedule sourceCode;
+	  private Program program;
+	  private Boolean deadlinesMet;
+	  private ProgramSchedule schedule;
+	  private WarpInterface warp;
+		
 	  
 
 	ChannelVisualization channelVisualization = new ChannelVisualization(warp); 
 	ProgramVisualization programVisualization = new ProgramVisualization(warp);
+
+	ChannelVisualizationTest(WarpInterface warp) {
+		super();
+		this.warp = warp;
+		this.ca = warp.toChannelAnalysis();
+		this.deadlinesMet = warp.deadlinesMet();
+		this.program = warp.toProgram();
+		this.schedule = program.getSchedule();
+	}
 
     
 	@Test
