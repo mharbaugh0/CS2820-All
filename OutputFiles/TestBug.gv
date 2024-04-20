@@ -1,0 +1,9 @@
+strict digraph TestBug {
+    A  -> B; 
+    C  -> D  -> E  -> F; 
+labelloc  =  "t" 
+label = <Graph TestBug <br/>
+Flow F0: A -&#62; B<br/>
+Flow F1: C -&#62; D -&#62; E -&#62; F<br/>
+>
+} 
