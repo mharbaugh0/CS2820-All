@@ -2,8 +2,6 @@ package edu.uiowa.cs.warp;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Before;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import java.util.concurrent.TimeUnit;
@@ -12,18 +10,23 @@ import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 
 class ChannelVisualizationTest {
-    private ChannelVisualization channelVisualization;
-    private WarpInterface warp;
-    
-    @Before
-    public void setUp() {
-        channelVisualization = new ChannelVisualization(warp);
-    }
+	private WarpInterface warp;
+	  
+
+	ChannelVisualization channelVisualization = new ChannelVisualization(warp); 
+	ProgramVisualization programVisualization = new ProgramVisualization(warp);
+
     
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void testDisplayVisualization() {
 		assertNotNull(channelVisualization.displayVisualization());
+	}
+	
+	@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	public void testDisplayVisualization2() {
+		assertNotSame(channelVisualization.displayVisualization(), programVisualization.displayVisualization());
 	}
 
 	@Test
@@ -67,6 +70,12 @@ class ChannelVisualizationTest {
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void testCreateVisualizationData() {
 		assertNotNull(channelVisualization.createVisualizationData());
+	}
+	
+	@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	public void testCreateVisualizationData2() {
+		assertNotSame(channelVisualization.createVisualizationData(), programVisualization.createVisualizationData());
 	}
 
 	@Test
