@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_DUmU0NwEEe6Na48VIg2zZA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_DUm74NwEEe6Na48VIg2zZA" source="codegen">
         <details xmi:id="_DUm74dwEEe6Na48VIg2zZA" key="codegenDirectory" value="/cs2820-spring24/src"/>
-        <details xmi:id="_Ezq64NwEEe6Na48VIg2zZA" key="AssociatedSourceCode" value="/cs2820-spring24/src/edu/uiowa/cs/warp/AbstractMap.java;1424622298/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activation.java;1809359660/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activations.java;820905503/1;/cs2820-spring24/src/edu/uiowa/cs/warp/BasicPoset.java;2224306677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelAnalysis.java;1818024476/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelVisualization.java;3405070174/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Channels.java;681255630/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CodeFragment.java;1317884368/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CombinedActivation.java;2029188156/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CommunicationGraph.java;1885349989/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ConnectivityPoset.java;79606901/1;/cs2820-spring24/src/edu/uiowa/cs/warp/DeadlineComparator.java;2664873414/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Description.java;1965213309/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Edge.java;3709953189/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FileManager.java;27414850/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Flow.java;1255836731/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowMap.java;4084289374/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowNodeToActivationMap.java;1064623610/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphViz.java;2298633738/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphVizListener.java;1295846020/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GuiVisualization.java;176383205/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InputGraphFile.java;1686457629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InstructionTimeSlot.java;888741420/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyAnalysis.java;2597620126/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyVisualization.java;3779818677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatestReleaseTimeComparator.java;459276445/1;/cs2820-spring24/src/edu/uiowa/cs/warp/MaxPhaseComparator.java;1826505669/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Node.java;1981269113/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NodeMap.java;1346116292/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NonPreemptiveSchedule.java;1765515208/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NotImplentedVisualization.java;4124722036/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PeriodComparator.java;3701604498/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Poset.java;1044364042/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PreemptiveSchedule.java;4276577887/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PriorityComparator.java;3500031587/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Program.java;456537712/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramSchedule.java;1201325015/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramVisualization.java;4142619668/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeComparator.java;76739592/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeQueue.java;2628899863/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityAnalysis.java;1568853889/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityParameters.java;1809110799/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityRow.java;1058057599/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityTable.java;2292645629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityVisualization.java;929334119/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReportVisualization.java;392587375/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Row.java;2072540828/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObjectQueue.java;2628500970/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Schedule.java;2499220005/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTable.java;820659454/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTime.java;3343049115/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SimulatorInput.java;3110368559/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SortedPeriodQueue.java;2370839513/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemAttributes.java;3931163786/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemFactory.java;1232525323/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Table.java;27306893/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Visualization.java;3371724965/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationFactory.java;1441226277/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationImplementation.java;1322037080/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationObject.java;1377291719/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpInterface.java;485526877/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpPoset.java;346020847/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpSystem.java;1549849953/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoad.java;2666592132/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpDSL.java;790761677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Warp.java;357128896/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadDescription.java;2405246373/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadListener.java;3074030464/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObject.java;987848086/1;/cs2820-spring24/test/edu/uiowa/cs/warp/WorkLoadTest.java;2607381085/1;"/>
+        <details xmi:id="_Ezq64NwEEe6Na48VIg2zZA" key="AssociatedSourceCode" value="/cs2820-spring24/src/edu/uiowa/cs/warp/AbstractMap.java;1424622298/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activation.java;1809359660/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Activations.java;820905503/1;/cs2820-spring24/src/edu/uiowa/cs/warp/BasicPoset.java;2224306677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelAnalysis.java;1818024476/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ChannelVisualization.java;3294575415/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Channels.java;681255630/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CodeFragment.java;1317884368/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CombinedActivation.java;2029188156/1;/cs2820-spring24/src/edu/uiowa/cs/warp/CommunicationGraph.java;1885349989/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ConnectivityPoset.java;79606901/1;/cs2820-spring24/src/edu/uiowa/cs/warp/DeadlineComparator.java;2664873414/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Description.java;1965213309/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Edge.java;3709953189/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FileManager.java;27414850/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Flow.java;1255836731/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowMap.java;4084289374/1;/cs2820-spring24/src/edu/uiowa/cs/warp/FlowNodeToActivationMap.java;1064623610/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphViz.java;2298633738/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GraphVizListener.java;1295846020/1;/cs2820-spring24/src/edu/uiowa/cs/warp/GuiVisualization.java;176383205/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InputGraphFile.java;1686457629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/InstructionTimeSlot.java;888741420/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyAnalysis.java;2597620126/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatencyVisualization.java;3779818677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/LatestReleaseTimeComparator.java;459276445/1;/cs2820-spring24/src/edu/uiowa/cs/warp/MaxPhaseComparator.java;1826505669/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Node.java;1981269113/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NodeMap.java;1346116292/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NonPreemptiveSchedule.java;1765515208/1;/cs2820-spring24/src/edu/uiowa/cs/warp/NotImplentedVisualization.java;4124722036/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PeriodComparator.java;3701604498/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Poset.java;1044364042/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PreemptiveSchedule.java;4276577887/1;/cs2820-spring24/src/edu/uiowa/cs/warp/PriorityComparator.java;3500031587/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Program.java;456537712/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramSchedule.java;1201325015/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ProgramVisualization.java;4142619668/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeComparator.java;76739592/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReleaseTimeQueue.java;2628899863/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityAnalysis.java;1568853889/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityParameters.java;1809110799/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityRow.java;1058057599/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityTable.java;2292645629/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReliabilityVisualization.java;929334119/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ReportVisualization.java;392587375/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Row.java;2072540828/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObjectQueue.java;2628500970/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Schedule.java;2499220005/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTable.java;820659454/1;/cs2820-spring24/src/edu/uiowa/cs/warp/ScheduleTime.java;3343049115/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SimulatorInput.java;3110368559/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SortedPeriodQueue.java;2370839513/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemAttributes.java;3931163786/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SystemFactory.java;1232525323/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Table.java;27306893/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Visualization.java;3371724965/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationFactory.java;1441226277/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationImplementation.java;1322037080/1;/cs2820-spring24/src/edu/uiowa/cs/warp/VisualizationObject.java;1377291719/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpInterface.java;485526877/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpPoset.java;346020847/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpSystem.java;1549849953/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoad.java;2666592132/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WarpDSL.java;790761677/1;/cs2820-spring24/src/edu/uiowa/cs/warp/Warp.java;357128896/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadDescription.java;2405246373/1;/cs2820-spring24/src/edu/uiowa/cs/warp/WorkLoadListener.java;3074030464/1;/cs2820-spring24/src/edu/uiowa/cs/warp/SchedulableObject.java;987848086/1;/cs2820-spring24/test/edu/uiowa/cs/warp/WorkLoadTest.java;2607381085/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_vRzQsNwKEe6NjuaAYik8cQ" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_vRz3wNwKEe6NjuaAYik8cQ" source="com.yattasolutions.codegen.reverse">
@@ -879,12 +879,13 @@ local connectivity.
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_ECxCYdwEEe6Na48VIg2zZA" name="ChannelVisualization">
-              <ownedComment xmi:id="_ZXcA0P6pEe6xldDwZq2PWA">
-                <body>ChannelVisualization creates the visualizations for the channel analysis of the WARP program.
+              <ownedComment xmi:id="_9NgY0AJlEe-mgONtUl1l9w">
+                <body>ChannelVisualization creates the visualizations for the channel analysis of
+the WARP program.
 &lt;p>
 
-CS2820 Spring 2024 Project: Implement this class to create the file visualization that is requested
-in Warp.
+CS2820 Spring 2024 Project: Implement this class to create the file
+visualization that is requested in Warp.
 
 @author sgoddard
 @version 1.7
@@ -914,107 +915,108 @@ in Warp.
                 </ownedParameter>
                 <language>java</language>
                 <body>super(new FileManager(), warp, SOURCE_SUFFIX);
- this.warp = warp;
- this.ca = warp.toChannelAnalysis();
- this.deadlinesMet = warp.deadlinesMet();
- this.program = warp.toProgram();
- this.schedule = program.getSchedule();
- 
- 
- /**
-  * The method is used to call the value of other methods in this class creating an object which
-  * can be used to display a chart. 
-  * @return GuiVisualization that can be used to make a chart
-  */
-  </body>
+		this.warp = warp;
+		this.ca = warp.toChannelAnalysis();
+		this.deadlinesMet = warp.deadlinesMet();
+		this.program = warp.toProgram();
+		this.schedule = program.getSchedule();
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLoP6pEe6xldDwZq2PWA" name="displayVisualization" specification="_ZW9fsP6pEe6xldDwZq2PWA">
-                <ownedParameter xmi:id="_ZXaLof6pEe6xldDwZq2PWA" type="_EDR_wNwEEe6Na48VIg2zZA" direction="return"/>
+                <ownedParameter xmi:id="_ZXaLof6pEe6xldDwZq2PWA" type="_EDR_wNwEEe6Na48VIg2zZA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return new GuiVisualization(createTitle(), createColumnHeader(), createVisualizationData());
-  </body>
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLov6pEe6xldDwZq2PWA" name="createHeader" specification="_ZW-Gwv6pEe6xldDwZq2PWA">
-                <ownedParameter xmi:id="_ZXaLo_6pEe6xldDwZq2PWA" type="_EC8BgNwEEe6Na48VIg2zZA" direction="return"/>
+                <ownedParameter xmi:id="_ZXaLo_6pEe6xldDwZq2PWA" type="_EC8BgNwEEe6Na48VIg2zZA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Description header = new Description();
- 	  header.add(createTitle());
-       header.add(String.format(&quot;Scheduler Name: %s\n&quot;, program.getSchedulerName()));
-       // creating header
-       return header;
-   </body>
+		header.add(createTitle());
+		header.add(String.format(&quot;Scheduler Name: %s\n&quot;, program.getSchedulerName()));
+		// creating header
+		return header;
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLpP6pEe6xldDwZq2PWA" name="createFooter" specification="_ZW-Gxv6pEe6xldDwZq2PWA">
-                <ownedParameter xmi:id="_ZXaLpf6pEe6xldDwZq2PWA" type="_EC8BgNwEEe6Na48VIg2zZA" direction="return"/>
+                <ownedParameter xmi:id="_ZXaLpf6pEe6xldDwZq2PWA" type="_EC8BgNwEEe6Na48VIg2zZA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Description footer = new Description();
-	    String deadlineMsg = null;
+		String deadlineMsg = null;
 
-	    if (deadlinesMet) {
-	      deadlineMsg = &quot;All flows meet their deadlines\n&quot;;
-	    } else {
-	      deadlineMsg = &quot;WARNING: NOT all flows meet their deadlines. See deadline analysis report.\n&quot;;
-	    }
-	    footer.add(String.format(&quot;// %s&quot;, deadlineMsg));
-	    return footer;
-</body>
+		if (deadlinesMet) {
+			deadlineMsg = &quot;All flows meet their deadlines\n&quot;;
+		} else {
+			deadlineMsg = &quot;WARNING: NOT all flows meet their deadlines. See deadline analysis report.\n&quot;;
+		}
+		footer.add(String.format(&quot;// %s&quot;, deadlineMsg));
+		return footer;
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLpv6pEe6xldDwZq2PWA" name="createColumnHeader" specification="_ZW-Gyv6pEe6xldDwZq2PWA">
                 <ownedParameter xmi:id="_ZXaLp_6pEe6xldDwZq2PWA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXaLqP6pEe6xldDwZq2PWA" value="*"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>int numChannels = program.getNumChannels();
 
-    
-    String[] headers = new String[numChannels + 1 ];  
-    headers[0] = &quot;Time Slot&quot;;
-    for (int i = 1; i &lt;= numChannels; i++) {
-        headers[i] = &quot;Channel &quot; + i;
-    }
-    return headers;
-</body>
+		// ADD NUMFAULTS
+		String[] headers = new String[numChannels + 1];
+		headers[0] = &quot;Time Slot&quot;;
+		for (int i = 1; i &lt;= numChannels; i++) {
+			headers[i] = &quot;Channel &quot; + i;
+		}
+		return headers;
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLqf6pEe6xldDwZq2PWA" name="createVisualizationData" specification="_ZW-t0_6pEe6xldDwZq2PWA">
                 <ownedParameter xmi:id="_ZXaLqv6pEe6xldDwZq2PWA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXaLq_6pEe6xldDwZq2PWA" value="*"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>if (visualizationData == null) {
-        int numRows = program.getNumChannels();
-    
-        int numColumns = schedule.getNumRows();
-        visualizationData = new String[numRows][numColumns + 1];
-        
+			int numRows = program.getNumChannels();
 
-        for (int row = 0; row &lt; numRows; row++) {
-            visualizationData[row][0] = String.format(&quot;%s&quot;, row);
-            for (int column = 0; column &lt; numColumns; column++) {
-                visualizationData[row][column + 1] = schedule.get(row, column);
-             
-            }
-        }
-    }
-    return visualizationData;
-</body>
+			int numColumns = schedule.getNumRows();
+			visualizationData = new String[numRows][numColumns + 1];
+
+			for (int row = 0; row &lt; numRows; row++) {
+				visualizationData[row][0] = String.format(&quot;%s&quot;, row);
+				for (int column = 0; column &lt; numColumns; column++) {
+					visualizationData[row][column + 1] = schedule.get(row, column);
+
+				}
+			}
+		}
+		return visualizationData;
+	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZXaLrP6pEe6xldDwZq2PWA" name="createTitle" specification="_ZW-t2f6pEe6xldDwZq2PWA">
                 <ownedParameter xmi:id="_ZXaLrf6pEe6xldDwZq2PWA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
-                <body>return String.format(&quot;Channel Analysis for graph: %s\n&quot;, program.getName());    
-</body>
+                <body>return String.format(&quot;Channel Analysis for graph: %s\n&quot;, program.getName());
+	</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_EOuawNwEEe6Na48VIg2zZA" name="ChannelVisualization" visibility="package" method="_ESs72NwEEe6Na48VIg2zZA">
                 <eAnnotations xmi:id="_EOuawtwEEe6Na48VIg2zZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                   <details xmi:id="_EOuaw9wEEe6Na48VIg2zZA" key="create"/>
                 </eAnnotations>
-                <ownedComment xmi:id="_ZXcA0f6pEe6xldDwZq2PWA">
+                <ownedComment xmi:id="_9NgY0QJlEe-mgONtUl1l9w">
                   <body>
-@param warp is a warp element from WarpInterfac</body>
+	 * @param warp is a warp element from WarpInterfac</body>
                 </ownedComment>
                 <ownedParameter xmi:id="_EOuawdwEEe6Na48VIg2zZA" name="warp" type="_EEReQNwEEe6Na48VIg2zZA"/>
                 <ownedParameter xmi:id="_EOuaxNwEEe6Na48VIg2zZA" type="_ECxCYdwEEe6Na48VIg2zZA" direction="return"/>
@@ -1040,10 +1042,11 @@ in Warp.
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZW-t1f6pEe6xldDwZq2PWA" value="*"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_ZW-t2f6pEe6xldDwZq2PWA" name="createTitle" visibility="private" method="_ZXaLrP6pEe6xldDwZq2PWA">
-                <ownedComment xmi:id="_ZXcA0v6pEe6xldDwZq2PWA">
-                  <body>This method creates the title depending on the file name. 
-@return createTitle takes the name of the file</body>
+              <ownedOperation xmi:id="_ZW-t2f6pEe6xldDwZq2PWA" name="createTitle" visibility="package" method="_ZXaLrP6pEe6xldDwZq2PWA">
+                <ownedComment xmi:id="_9NgY0gJlEe-mgONtUl1l9w">
+                  <body>This method creates the title depending on the file name.
+	 * 
+	 * @return createTitle takes the name of the file</body>
                 </ownedComment>
                 <ownedParameter xmi:id="_ZXLiIP6pEe6xldDwZq2PWA" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -3823,7 +3826,7 @@ headings.
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_EDVqINwEEe6Na48VIg2zZA" name="LatencyAnalysis">
-              <ownedComment xmi:id="_4BAyU_6pEe6xldDwZq2PWA">
+              <ownedComment xmi:id="_9zDV4AJlEe-mgONtUl1l9w">
                 <body>@author sgoddard2
 @version 1.6</body>
               </ownedComment>
@@ -15142,9 +15145,9 @@ Description object.
   <UMLLabProfile:Reference xmi:id="_ZXd2A_6pEe6xldDwZq2PWA" base_Element="_ZXd2Af6pEe6xldDwZq2PWA"/>
   <UMLLabProfile:Reference xmi:id="_ZXedEP6pEe6xldDwZq2PWA" base_Element="_ZXd2BP6pEe6xldDwZq2PWA"/>
   <UMLLabProfile:Patch xmi:id="_5oDogP6pEe6xldDwZq2PWA" base_Element="_EC92sNwEEe6Na48VIg2zZA" patchText="@@ -345,12 +345,8 @@&#xA; tate&#xA;-()()&#xA;  %7B%0A%09&#xA;" conflicting="false"/>
-  <UMLLabProfile:Patch xmi:id="_5oE2oP6pEe6xldDwZq2PWA" base_Element="_EDVqINwEEe6Na48VIg2zZA" patchText="@@ -181,22 +181,25 @@&#xA; ysis %7B%0A%0A&#xA;-public&#xA;+  private&#xA;  static &#xA;@@ -242,22 +242,25 @@&#xA;  MISS%22;%0A&#xA;-public&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_5oE2of6pEe6xldDwZq2PWA" base_Element="_EEFRANwEEe6Na48VIg2zZA" patchText="@@ -113,12 +113,8 @@&#xA; ices&#xA;-()()&#xA;  %7B%0A%09&#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_5oFdsP6pEe6xldDwZq2PWA" base_Element="_EEI7Y9wEEe6Na48VIg2zZA" patchText="@@ -134,28 +134,24 @@&#xA; ystemChoices&#xA;-()()&#xA;  %7B%0A    SOURC&#xA;@@ -273,12 +273,8 @@&#xA; ices&#xA;-()()&#xA;  %7B%0A &#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_5oFdsf6pEe6xldDwZq2PWA" base_Element="_EEjyINwEEe6Na48VIg2zZA" patchText="@@ -130,122 +130,8 @@&#xA; %0A */&#xA;-%0Aimport edu.uiowa.cs.warp.WarpDSL.InstructionParameters;%0D%0Aimport edu.uiowa.cs.warp.WarpDSL.InstructionParameters;%0D&#xA; %0A%0Aim&#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_5oGr0P6pEe6xldDwZq2PWA" base_Element="_EEoDkNwEEe6Na48VIg2zZA" patchText="@@ -4029,21 +4029,25 @@&#xA; wf, ra)%0A&#xA;-publi&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_-BBgcAJlEe-mgONtUl1l9w" base_Element="_EDVqINwEEe6Na48VIg2zZA" patchText="@@ -242,22 +242,25 @@&#xA;  MISS%22;%0A&#xA;-public&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
 </xmi:XMI>
