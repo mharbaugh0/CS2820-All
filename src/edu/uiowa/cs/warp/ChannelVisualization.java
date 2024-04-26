@@ -111,7 +111,7 @@ public class ChannelVisualization extends VisualizationObject {
 		String[] headers = new String[numChannels + 1];
 		headers[0] = "Time Slot";
 		for (int i = 1; i <= numChannels; i++) {
-			headers[i] = "Channel " + i;
+			headers[i] = ""+(char)('A'+i-1);
 		}
 		return headers;
 	}
@@ -148,6 +148,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * @return createTitle takes the name of the file
 	 */
 	String createTitle() {
-		return String.format("Channel Analysis for graph: %s\n", program.getName());
+		return String.format("Channel Analysis for graph: %s" ,program.getName());
+		
 	}
 }
