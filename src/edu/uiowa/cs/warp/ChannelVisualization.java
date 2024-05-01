@@ -19,16 +19,16 @@ public class ChannelVisualization extends VisualizationObject {
 	private static final String OBJECT_NAME = "Channel Analysis";
 	private WarpInterface warp;
 	private ChannelAnalysis ca;
-	/**
-	 * The Schedule of the program source code.This represents the sequence of tasks in program 
-	 * that can be visualized in the channel analysis.
-	 **/
+
 	private ProgramSchedule sourceCode;
 	/**
-	 * This is a instance of program.
+	 * The Schedule of the program source code.This represents the sequence of tasks in program 
+	 * that can be visualized in the channel analysis
 	 **/
 	private Program program;
-	
+	/**
+	 * boolean flag to see if deadlines were met
+	 **/
 	private Boolean deadlinesMet;
 	/**
 	 * constructor for new instance of ProgramVisualization
@@ -63,14 +63,14 @@ public class ChannelVisualization extends VisualizationObject {
 		return new GuiVisualization(createTitle(), createColumnHeader(), createVisualizationData());
 	}
 
-	@Override
 
 	/**
-	 * Creates a header for the chart
+	 * Creates a title for the chart based on the program name.
 	 * 
-	 * @return header is used to make the header for the chart.
+	 * @return createHeader Title of the program name
 	 * 
 	 **/
+	@Override
 	protected Description createHeader() {
 		Description header = new Description();
 		header.add(createTitle());
