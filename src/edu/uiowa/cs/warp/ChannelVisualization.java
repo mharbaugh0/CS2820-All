@@ -75,7 +75,7 @@ public class ChannelVisualization extends VisualizationObject {
 		Description header = new Description();
 		header.add(createTitle());
 		header.add(String.format("Scheduler Name: %s\n", program.getSchedulerName()));
-		if (program.getNumFaults()>0) {
+		if (program.getNumFaults()> 0) {
 			header.add(String.format("numFaults: %d\n", program.getNumFaults()));
 		}
 		// creating header
@@ -120,7 +120,8 @@ public class ChannelVisualization extends VisualizationObject {
 			for (int row = 0; row < numRows; row++) {
 				visualizationData[row][0] = String.format("%s", row);
 				for (int column = 0; column < numColumns; column++) {
-					visualizationData[row][column + 1] = schedule.get(row, column);
+					 String cellValue = schedule.get(row, column);
+		                visualizationData[row][column + 1] = (cellValue == null || cellValue.isEmpty()) ? "-" : cellValue;
 
 				}
 			}
