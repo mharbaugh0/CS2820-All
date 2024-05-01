@@ -45,18 +45,7 @@ public class ChannelAnalysis {
       this.programTable = program.getSchedule();
       this.conflictExists = false;
   }
-  public void analyzeChannel() {
-    Map<ScheduleTime, Map<String, Set<String>>> channelUsage = new HashMap<>();
-    WarpDSL warp = new WarpDSL();
-    for (InstructionTimeSlot slot : programTable){
-      ScheduleTime slot = slot.getElement();
-
-    }
-
-    }
-
-
-  }
+ 
 
   ProgramSchedule getChannelAnalysisTable () {
 	  throw new UnsupportedOperationException("Feature incomplete.");

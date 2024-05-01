@@ -75,6 +75,9 @@ public class ChannelVisualization extends VisualizationObject {
 		Description header = new Description();
 		header.add(createTitle());
 		header.add(String.format("Scheduler Name: %s\n", program.getSchedulerName()));
+		if (program.getNumFaults()>0) {
+			header.add(String.format("numFaults: %d\n", program.getNumFaults()));
+		}
 		// creating header
 		return header;
 	}
@@ -88,16 +91,15 @@ public class ChannelVisualization extends VisualizationObject {
 	 **/
 	@Override
 	protected String[] createColumnHeader() {
-
-		int numChannels = program.getNumChannels();
-
-		// ADD NUMFAULTS
-		String[] headers = new String[numChannels + 1];
-		headers[0] = "Time Slot";
-		for (int i = 1; i <= numChannels; i++) {
-			headers[i] = ""+(char)('A'+i-1);
+		var orderedNodes = program.toWorkLoad().getNodeNamesOrderedAlphabetically();
+		String [] columnNames = new String[orderedNodes.length+1];
+		columnNames [0] = "Time Slot";
+		for (int i = 0; i< orderedNodes.length; i++) {
+			columnNames [i+1]= orderedNodes[i];
+			
 		}
-		return headers;
+		return columnNames;
+		
 	}
 
 	/**
