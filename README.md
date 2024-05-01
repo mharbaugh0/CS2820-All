@@ -8,31 +8,25 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 
 
-<b> Sprint 2 distribution: </b>
+<b> Sprint 3 distribution: </b>
 
-- Weipeng:(illness)
+- Weipeng: Step 2 & 5
 - Matt: Step 3 
-- Dell: Step 2& 5
-- Esteban: Step 4 & 3
-- All: Step 1&6
+- Dell: Step 1 
+- Esteban: Steps 2 & 4
+- All: Step 3
 
-Diagrams and design documents for Sprint 2: 
+Diagrams and design documents for Sprint 3: 
+- Updated README with sprint objectives outlined and tasks delegated
+- Updated UML diagrams, located in the source folder
+- Updated sequence diagram, located in the 'architecture' folder
+- Updated JavaDoc comments explaining code purpose, parameters, and protection level throughout, 
+and regenerated JavaDoc files located in the 'doc' folder
+- JUnit tests for the ChannelVisualization and ChannelAnalysis classes, located in the 'test' folder 
 
 
 <br>
-For Sprint 2, Matt and Esteban designed the algorithm for the implementation of the ChannelVisualization class by overriding the following methods in visualizationObject abstract class:
-
-
-- createHeader(), which now creates a description object that contains the title and correct formatting.
-
-- createFooter(), which also creates a description object that contains a message indicating whether the deadlines were met.
-- createColumnHeader(), which returns a string array consisting of the time slots
-
-- createVisualizationData(), which creates a 2 dimensional array containing the data from the program and schedule objects.
-- displayVisualization: The methods createcolumnHeader(), and createVisualizationData() are designed to fit the parameters of the GuiVisualization constructor, and this is then used to override displayVisualization(). 
-<br>
-- A method for generating the title in the specified format (createTitle()) is also implemented.
-<br>
-- Dell developed the jUnit tests for these methods, ensuring their design and implementation, while Esteban updated the uml diagrams for the workLoad and Channel classes, as well as developed javadoc comments for the methods listed above.
-
-- We are not sure if the graph is showing properly so we may need to fix that in the next sprint
+For Sprint 3, all team members worked to correct the data presented in the ChannelVisualization table. 
+Each team member also took the lead in another area to complete Steps 1-5 as described above. 
+Because Steps 3 & 5 contributed the most points to the Sprint, we took extra time to ensure they worked correctly 
+and followed the style guide as outlined by the course. 
