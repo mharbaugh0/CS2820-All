@@ -19,28 +19,29 @@ public class ChannelVisualization extends VisualizationObject {
 	private static final String OBJECT_NAME = "Channel Analysis";
 	private WarpInterface warp;
 	private ChannelAnalysis ca;
-
+	/**
+	 * The Schedule of the program source code.This represents the sequence of tasks in program 
+	 * that can be visualized in the channel analysis.
+	 **/
 	private ProgramSchedule sourceCode;
 	/**
-	 * the warp program instance
-	 */
+	 * This is a instance of program.
+	 **/
 	private Program program;
-	/**
-	 * boolean flag to see if deadlines were met
-	 */
+	
 	private Boolean deadlinesMet;
 	/**
 	 * constructor for new instance of ProgramVisualization
 	 * 
 	 * @param Warp interface that give the information needed for
 	 *             ProgramVisualization
-	 */
+	 **/
 	private ProgramSchedule schedule;
 
 	/**
 	 * 
 	 * @param warp is a warp element from WarpInterfac
-	 */
+	 **/
 	ChannelVisualization(WarpInterface warp) {
 		super(new FileManager(), warp, SOURCE_SUFFIX);
 		this.warp = warp;
@@ -55,7 +56,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * an object which can be used to display a chart.
 	 * 
 	 * @return GuiVisualization that can be used to make a chart
-	 */
+	 **/
 
 	@Override
 	public GuiVisualization displayVisualization() {
@@ -65,10 +66,11 @@ public class ChannelVisualization extends VisualizationObject {
 	@Override
 
 	/**
-	 * The following method is used to create a header for the chart.
+	 * Creates a header for the chart
 	 * 
-	 * @return createHeader is used to make the header for the chart
-	 */
+	 * @return header is used to make the header for the chart.
+	 * 
+	 **/
 	protected Description createHeader() {
 		Description header = new Description();
 		header.add(createTitle());
@@ -81,7 +83,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * This method is used to make the footer for the chart displaying the data.
 	 * 
 	 * @return createFooter creates the footer for the chart
-	 */
+	 **/
 	@Override
 	protected Description createFooter() {
 		Description footer = new Description();
@@ -101,7 +103,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * depending on the size.
 	 * 
 	 * @return createColumnHeader create
-	 */
+	 **/
 	@Override
 	protected String[] createColumnHeader() {
 
@@ -121,7 +123,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * is empty or not.
 	 * 
 	 * @return createVisualizationData
-	 */
+	 **/
 	@Override
 	protected String[][] createVisualizationData() {
 		// Generate visualization data from table in Channel analysis
