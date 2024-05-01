@@ -1,5 +1,7 @@
 package edu.uiowa.cs.warp;
-
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Set;
 /**
  * ChannelAnalysis.java 
  * Analyzes the warp and program channels for conflicts.
@@ -42,6 +44,18 @@ public class ChannelAnalysis {
       this.program = program;
       this.programTable = program.getSchedule();
       this.conflictExists = false;
+  }
+  public void analyzeChannel() {
+    Map<ScheduleTime, Map<String, Set<String>>> channelUsage = new HashMap<>();
+    WarpDSL warp = new WarpDSL();
+    for (InstructionTimeSlot slot : programTable){
+      ScheduleTime slot = slot.getElement();
+
+    }
+
+    }
+
+
   }
 
   ProgramSchedule getChannelAnalysisTable () {

@@ -79,25 +79,7 @@ public class ChannelVisualization extends VisualizationObject {
 		return header;
 	}
 
-	/**
-	 * This method is used to make the footer for the chart displaying the data.
-	 * 
-	 * @return createFooter creates the footer for the chart
-	 **/
-	@Override
-	protected Description createFooter() {
-		Description footer = new Description();
-		String deadlineMsg = null;
-
-		if (deadlinesMet) {
-			deadlineMsg = "All flows meet their deadlines\n";
-		} else {
-			deadlineMsg = "WARNING: NOT all flows meet their deadlines. See deadline analysis report.\n";
-		}
-		footer.add(String.format("// %s", deadlineMsg));
-		return footer;
-	}
-
+	
 	/**
 	 * the method creates the column header for the chart. It dynamically changes
 	 * depending on the size.
