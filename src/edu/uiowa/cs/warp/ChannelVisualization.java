@@ -49,6 +49,7 @@ public class ChannelVisualization extends VisualizationObject {
 		this.deadlinesMet = warp.deadlinesMet();
 		this.program = warp.toProgram();
 		this.schedule = program.getSchedule();
+		// this.sourceCode = ca.getChannelAnalysisTable();
 	}
 
 	/**
@@ -120,8 +121,12 @@ public class ChannelVisualization extends VisualizationObject {
 			for (int row = 0; row < numRows; row++) {
 				visualizationData[row][0] = String.format("%s", row);
 				for (int column = 0; column < numColumns; column++) {
-					 String cellValue = schedule.get(row, column);
-		                visualizationData[row][column + 1] = (cellValue == null || cellValue.isEmpty()) ? "-" : cellValue;
+					 String value = schedule.get(row, column);
+		             if (value == null || value.isEmpty()) {
+		            	 visualizationData[row][column + 1] = "-";
+		             }else {
+		            	 visualizationData[row][column + 1] = value;
+		             }
 
 				}
 			}
