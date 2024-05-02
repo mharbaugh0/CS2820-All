@@ -45,8 +45,7 @@ public class ChannelAnalysis {
       this.programTable = program.getSchedule();
       this.conflictExists = false;
   }
- 
-
+  
   ProgramSchedule getChannelAnalysisTable () {
 	  throw new UnsupportedOperationException("Feature incomplete.");
   }

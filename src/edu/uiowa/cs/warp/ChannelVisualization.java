@@ -46,9 +46,10 @@ public class ChannelVisualization extends VisualizationObject {
 		super(new FileManager(), warp, SOURCE_SUFFIX);
 		this.warp = warp;
 		this.ca = warp.toChannelAnalysis();
+		
 		this.deadlinesMet = warp.deadlinesMet();
 		this.program = warp.toProgram();
-		this.schedule = program.getSchedule();
+		this.schedule = ca.getChannelAnalysisTable();
 		// this.sourceCode = ca.getChannelAnalysisTable();
 	}
 
@@ -92,11 +93,11 @@ public class ChannelVisualization extends VisualizationObject {
 	 **/
 	@Override
 	protected String[] createColumnHeader() {
-		var orderedNodes = program.toWorkLoad().getNodeNamesOrderedAlphabetically();
-		String [] columnNames = new String[orderedNodes.length+1];
+		var timeSlots = schedule.getNumColumns();
+		String [] columnNames = new String[timeSlots+1];
 		columnNames [0] = "Time Slot";
-		for (int i = 0; i< orderedNodes.length; i++) {
-			columnNames [i+1]= orderedNodes[i];
+		for (int i = 0; i< timeSlots+1; i++) {
+			columnNames [i+1]= String.format("%d", i);
 			
 		}
 		return columnNames;
@@ -113,9 +114,9 @@ public class ChannelVisualization extends VisualizationObject {
 	protected String[][] createVisualizationData() {
 		// Generate visualization data from table in Channel analysis
 		if (visualizationData == null) {
-			int numRows = program.getNumChannels();
+			int numRows = schedule.getNumRows(); // changed numrow
 
-			int numColumns = schedule.getNumRows();
+			int numColumns = schedule.getNumColumns(); //changed numcolumns
 			visualizationData = new String[numRows][numColumns + 1];
 
 			for (int row = 0; row < numRows; row++) {
