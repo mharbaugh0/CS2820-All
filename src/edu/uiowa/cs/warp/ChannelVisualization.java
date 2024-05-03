@@ -113,10 +113,11 @@ public class ChannelVisualization extends VisualizationObject {
 	@Override
 	protected String[][] createVisualizationData() {
 		// Generate visualization data from table in Channel analysis
+		
 		if (visualizationData == null) {
 			int numRows = schedule.getNumRows(); // changed numrow
 
-			int numColumns = schedule.getNumColumns(); //changed numcolumns
+			int numColumns = schedule.getNumColumns(); //changed num
 			visualizationData = new String[numRows][numColumns + 1];
 
 			for (int row = 0; row < numRows; row++) {
@@ -124,6 +125,7 @@ public class ChannelVisualization extends VisualizationObject {
 				for (int column = 0; column < numColumns; column++) {
 					 String value = schedule.get(row, column);
 		             if (value == null || value.isEmpty()) {
+		            	 
 		            	 visualizationData[row][column + 1] = "-";
 		             }else {
 		            	 visualizationData[row][column + 1] = value;
