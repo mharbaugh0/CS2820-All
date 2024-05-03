@@ -33,8 +33,8 @@ class ChannelVisualizationTest {
 	public void testCreateChannelVisualization(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			assertNotNull(channelVisualization);
 		}
 	}
@@ -44,8 +44,8 @@ class ChannelVisualizationTest {
 	public void testDisplayVisualization(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			GuiVisualization guiVisualization = channelVisualization.displayVisualization();
 			assertNotNull(guiVisualization);
 		}
@@ -56,8 +56,8 @@ class ChannelVisualizationTest {
 	public void testCreateHeader(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			Description headDescription = channelVisualization.createHeader();
 			assertNotNull(headDescription);
 		}
@@ -68,8 +68,8 @@ class ChannelVisualizationTest {
 	public void testCreateFooter(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			Description footDescription = channelVisualization.createFooter();
 			assertNotNull(footDescription);
 		}
@@ -80,8 +80,8 @@ class ChannelVisualizationTest {
 	public void testCreateColumnHeader(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			String[] columnHeaders = channelVisualization.createColumnHeader();
 			assert columnHeaders.length > 0;
 		}
@@ -92,8 +92,8 @@ class ChannelVisualizationTest {
 	public void testCreateVisualizationData(){
 		Integer nChannels = 16;
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			WarpInterface wrap = new WarpSystem(initWorkLoad(), nChannels, choice);
-			ChannelVisualization channelVisualization = new ChannelVisualization(wrap);
+			WarpInterface warp = new WarpSystem(initWorkLoad(), nChannels, choice);
+			ChannelVisualization channelVisualization = new ChannelVisualization(warp);
 			String[][] visualizationData = channelVisualization.createVisualizationData();
 			assert visualizationData.length > 0;
 

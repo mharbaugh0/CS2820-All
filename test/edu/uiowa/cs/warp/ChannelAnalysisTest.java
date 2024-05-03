@@ -24,7 +24,6 @@ class ChannelAnalysisTest {
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void testCreateChannelAnalysisObject() {
 		WorkLoad workLoad = new WorkLoad(numFaults, minLQ, e2e, inputFile);
-		Program program = new Program(workLoad,nChannels,choice);
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
 			WarpInterface warp = new WarpSystem(workLoad, nChannels, choice);
 			ChannelAnalysis channelAnalysis = new ChannelAnalysis(warp);
@@ -37,12 +36,21 @@ class ChannelAnalysisTest {
 	public void testCreateChannelAnalysisObject2() {
 		WorkLoad workLoad = new WorkLoad(numFaults, minLQ, e2e, inputFile);
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
-			Program program = new Program(workLoad, nChannels, choice);
-			ChannelAnalysis channelAnalysis = new ChannelAnalysis(null);
+			WarpInterface warp = new WarpSystem(workLoad, nChannels, choice);
+			ChannelAnalysis channelAnalysis = new ChannelAnalysis(warp);
 			checkChannelAnalysis(channelAnalysis);
 		}
 	}
-
+	
+	
+	/*@Test
+	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
+	public void testGetChannelAnalysisTable() {
+		ProgramSchedule temp = new ProgramSchedule();
+		temp = channelAnalysis.getChannelAnalysisTable();
+		assertNotNull(temp);
+	}*/
+	
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void checkChannelAnalysis(ChannelAnalysis channelAnalysis){
