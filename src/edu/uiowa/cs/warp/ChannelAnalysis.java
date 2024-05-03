@@ -71,6 +71,7 @@ public class ChannelAnalysis {
 			String channel = params.getChannel();
 			String coordinator = params.getCoordinator();
 			String formattedData = String.format("[%s] :: \"%s\" : (\"%s\":\"%s\")", coordinator, flow, src, snk);
+			String[] caTable[];
 			caTable[channel][timeslot] = formattedData;
 
 			StringBuilder entry = new StringBuilder();
@@ -96,8 +97,8 @@ public class ChannelAnalysis {
 		}
 		return false;
 	}
-
-	ProgramSchedule getChannelAnalysisTable() {
+	
+	public ProgramSchedule getChannelAnalysisTable() {
 		return caTable;
 	}
 
