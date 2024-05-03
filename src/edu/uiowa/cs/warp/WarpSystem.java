@@ -58,7 +58,6 @@ public class WarpSystem implements WarpInterface {
 
   @Override
   public ChannelAnalysis toChannelAnalysis() {
-    // TODO Auto-generated method stub
     ca = new ChannelAnalysis(this);
     return ca;
   }
@@ -132,6 +131,11 @@ public class WarpSystem implements WarpInterface {
     // TODO Auto-generated method stub
 
   }
+
+public ProgramSchedule getSchedule() {
+	// TODO Auto-generated method stub
+	return null;
+}
 
 
 }

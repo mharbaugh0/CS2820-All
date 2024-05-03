@@ -22,8 +22,8 @@ public class ChannelVisualization extends VisualizationObject {
 
 	private ProgramSchedule sourceCode;
 	/**
-	 * The Schedule of the program source code.This represents the sequence of tasks in program 
-	 * that can be visualized in the channel analysis
+	 * The Schedule of the program source code.This represents the sequence of tasks
+	 * in program that can be visualized in the channel analysis
 	 **/
 	private Program program;
 	/**
@@ -46,7 +46,7 @@ public class ChannelVisualization extends VisualizationObject {
 		super(new FileManager(), warp, SOURCE_SUFFIX);
 		this.warp = warp;
 		this.ca = warp.toChannelAnalysis();
-		
+
 		this.deadlinesMet = warp.deadlinesMet();
 		this.program = warp.toProgram();
 		this.schedule = ca.getChannelAnalysisTable();
@@ -65,7 +65,6 @@ public class ChannelVisualization extends VisualizationObject {
 		return new GuiVisualization(createTitle(), createColumnHeader(), createVisualizationData());
 	}
 
-
 	/**
 	 * Creates a title for the chart based on the program name.
 	 * 
@@ -77,14 +76,13 @@ public class ChannelVisualization extends VisualizationObject {
 		Description header = new Description();
 		header.add(createTitle());
 		header.add(String.format("Scheduler Name: %s\n", program.getSchedulerName()));
-		if (program.getNumFaults()> 0) {
+		if (program.getNumFaults() > 0) {
 			header.add(String.format("numFaults: %d\n", program.getNumFaults()));
 		}
 		// creating header
 		return header;
 	}
 
-	
 	/**
 	 * the method creates the column header for the chart. It dynamically changes
 	 * depending on the size.
@@ -94,14 +92,14 @@ public class ChannelVisualization extends VisualizationObject {
 	@Override
 	protected String[] createColumnHeader() {
 		var timeSlots = schedule.getNumColumns();
-		String [] columnNames = new String[timeSlots+1];
-		columnNames [0] = "Time Slot";
-		for (int i = 0; i< timeSlots+1; i++) {
-			columnNames [i+1]= String.format("%d", i);
-			
+		String[] columnNames = new String[timeSlots + 1];
+		columnNames[0] = "Time Slot/";
+		for (int i = 0; i < timeSlots; i++) {
+			columnNames[i + 1] = String.format("%d", i);
+
 		}
 		return columnNames;
-		
+
 	}
 
 	/**
@@ -113,29 +111,30 @@ public class ChannelVisualization extends VisualizationObject {
 	@Override
 	protected String[][] createVisualizationData() {
 		// Generate visualization data from table in Channel analysis
+
 		
-		if (visualizationData == null) {
 			int numRows = schedule.getNumRows(); // changed numrow
 
-			int numColumns = schedule.getNumColumns(); //changed num
+			int numColumns = schedule.getNumColumns(); // changed num
 			visualizationData = new String[numRows][numColumns + 1];
 
 			for (int row = 0; row < numRows; row++) {
 				visualizationData[row][0] = String.format("%s", row);
 				for (int column = 0; column < numColumns; column++) {
-					 String value = schedule.get(row, column);
-		             if (value == null || value.isEmpty()) {
-		            	 
-		            	 visualizationData[row][column + 1] = "-";
-		             }else {
-		            	 visualizationData[row][column + 1] = value;
-		             }
+					String value = schedule.get(row, column);
+					if (value == null || value.isEmpty()) {
+
+						visualizationData[row][column + 1] = "-";
+					} else {
+						visualizationData[row][column + 1] = value;
+					}
 
 				}
 			}
+			return visualizationData;
 		}
-		return visualizationData;
-	}
+		
+	
 
 	/**
 	 * This method creates the title depending on the file name.
@@ -143,7 +142,7 @@ public class ChannelVisualization extends VisualizationObject {
 	 * @return createTitle takes the name of the file
 	 */
 	String createTitle() {
-		return String.format("Channel Analysis for graph: %s" ,program.getName());
-		
+		return String.format("Channel Analysis for graph: %s", program.getName());
+
 	}
 }

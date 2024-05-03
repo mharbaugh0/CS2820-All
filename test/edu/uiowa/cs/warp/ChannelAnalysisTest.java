@@ -19,10 +19,12 @@ class ChannelAnalysisTest {
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void testCreateChannelAnalysisObject() {
+		WorkLoad workLoad = new Workload();
+		Program program = new Program(workLoad,nChannels,choice);
 		WorkLoad workLoad = new WorkLoad(numFaults, minLQ, e2e, inputFile);
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
 			WarpInterface warp = new WarpSystem(workLoad, nChannels, choice);
-			ChannelAnalysis channelAnalysis = new ChannelAnalysis(warp);
+			ChannelAnalysis channelAnalysis = new ChannelAnalysis(program);
 			checkChannelAnalysis(channelAnalysis);
 		}
 	}
@@ -33,7 +35,7 @@ class ChannelAnalysisTest {
 		WorkLoad workLoad = new WorkLoad(numFaults, minLQ, e2e, inputFile);
 		for (SystemAttributes.ScheduleChoices choice : SystemAttributes.ScheduleChoices.values()) {
 			Program program = new Program(workLoad, nChannels, choice);
-			ChannelAnalysis channelAnalysis = new ChannelAnalysis(program);
+			ChannelAnalysis channelAnalysis = new ChannelAnalysis(null);
 			checkChannelAnalysis(channelAnalysis);
 		}
 	}
