@@ -58,6 +58,7 @@ public class ChannelAnalysis {
 		this.programTable = program.getSchedule();
 		this.conflictExists = false;
 		this.warpDSL = warpDSL;
+		this.buildTable(warpDSL);
 	}
 
 	public void buildTable(WarpDSL warpDSL) {
@@ -71,6 +72,18 @@ public class ChannelAnalysis {
 			String coordinator = params.getCoordinator();
 			String formattedData = String.format("[%s] :: \"%s\" : (\"%s\":\"%s\")", coordinator, flow, src, snk);
 			caTable[channel][timeslot] = formattedData;
+
+			StringBuilder entry = new StringBuilder();
+			for (InstructionParameters params2 : parametersList) {
+				if (isSameCoordinator(params2.getCoordinator(), parametersList)) {
+					if (entry.length() > 0) {
+						entry.append("; ");
+					}
+					entry.append(String.format("[%s]::%s:(%s:%s)", params2.getCoordinator(), params2.getFlow(),
+							params2.getSrc(), params2.getSnk()));
+				}
+			}
+			caTable[channel][timeslot] += entry.toString();
 		}
 	}
 
@@ -82,21 +95,6 @@ public class ChannelAnalysis {
 
 		}
 		return false;
-	}
-
-	public String formatConflicts(ArrayList<InstructionParameters> parametersList) {
-		StringBuilder entry = new StringBuilder();
-		for (InstructionParameters params : parametersList) {
-			if (isSameCoordinator(params.getCoordinator(), parametersList)) {
-				if (entry.length() > 0) {
-					entry.append("; ");
-				}
-				entry.append(String.format("[%s]::%s:(%s:%s)", params.getCoordinator(), params.getFlow(),
-						params.getSrc(), params.getSnk()));
-			}
-		}
-		return entry.toString();
-		caTable[channel][timeslot] += entry.toString();
 	}
 
 	ProgramSchedule getChannelAnalysisTable() {
