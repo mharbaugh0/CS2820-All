@@ -2,7 +2,7 @@ package edu.uiowa.cs.warp;
 
 /**
  * ChannelVisualization creates the visualizations for the channel analysis of
- * the WARP program.
+ * the WARP program. Nomrally this method is private but is maade public for testing purposes.
  * <p>
  * 
  * CS2820 Spring 2024 Project: Implement this class to create the file
@@ -55,7 +55,7 @@ public class ChannelVisualization extends VisualizationObject {
 
 	/**
 	 * The method is used to call the value of other methods in this class creating
-	 * an object which can be used to display a chart.
+	 * an object which can be used to display a chart. Normally this method is protected but was made private for testing
 	 * 
 	 * @return GuiVisualization that can be used to make a chart
 	 **/
@@ -66,13 +66,13 @@ public class ChannelVisualization extends VisualizationObject {
 	}
 
 	/**
-	 * Creates a title for the chart based on the program name.
+	 * Creates a title for the chart based on the program name. Normally this method would be protected but it is public for testing purposes
 	 * 
 	 * @return createHeader Title of the program name
 	 * 
 	 **/
 	@Override
-	protected Description createHeader() {
+	public Description createHeader() {
 		Description header = new Description();
 		header.add(createTitle());
 		header.add(String.format("Scheduler Name: %s\n", program.getSchedulerName()));
@@ -85,12 +85,12 @@ public class ChannelVisualization extends VisualizationObject {
 
 	/**
 	 * the method creates the column header for the chart. It dynamically changes
-	 * depending on the size.
+	 * depending on the size. Normally this method is protected but for testing purposes it is public
 	 * 
 	 * @return createColumnHeader create
 	 **/
 	@Override
-	protected String[] createColumnHeader() {
+	public String[] createColumnHeader() {
 		var timeSlots = schedule.getNumColumns();
 		String[] columnNames = new String[timeSlots + 1];
 		columnNames[0] = "Time Slot/";
@@ -104,12 +104,12 @@ public class ChannelVisualization extends VisualizationObject {
 
 	/**
 	 * This method deals with the data involved in the chart. It checks if the chart
-	 * is empty or not.
+	 * is empty or not. Normally this method would be protected but it is public for testing purposes
 	 * 
 	 * @return createVisualizationData
 	 **/
 	@Override
-	protected String[][] createVisualizationData() {
+	public String[][] createVisualizationData() {
 		// Generate visualization data from table in Channel analysis
 
 		
