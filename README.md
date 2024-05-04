@@ -8,31 +8,27 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 
 
-<b> Sprint 2 distribution: </b>
-
-- Weipeng:(illness)
-- Matt: Step 3 
-- Dell: Step 2& 5
-- Esteban: Step 4 & 3
-- All: Step 1&6
-
-Diagrams and design documents for Sprint 2: 
-
-
 <br>
-For Sprint 2, Matt and Esteban designed the algorithm for the implementation of the ChannelVisualization class by overriding the following methods in visualizationObject abstract class:
+-Updated by Matt
 
+-For Sprint 3. Esteban and Matt worked on the code for Channel Analysis and Channel Visualization. We were able to create a dummy table
+ 
+-Dell and Weipeng worked on the tests for Channel Analysis and Visualization, located in the "test" folder
 
-- createHeader(), which now creates a description object that contains the title and correct formatting.
+-Esteban and Matt updated javadoc comments while Esteban generated them, located in the "doc" folder
 
-- createFooter(), which also creates a description object that contains a message indicating whether the deadlines were met.
-- createColumnHeader(), which returns a string array consisting of the time slots
+-Weipeng made the sequence diagrams and Esteban edited them, located in the "architecture"
 
-- createVisualizationData(), which creates a 2 dimensional array containing the data from the program and schedule objects.
-- displayVisualization: The methods createcolumnHeader(), and createVisualizationData() are designed to fit the parameters of the GuiVisualization constructor, and this is then used to override displayVisualization(). 
-<br>
-- A method for generating the title in the specified format (createTitle()) is also implemented.
-<br>
-- Dell developed the jUnit tests for these methods, ensuring their design and implementation, while Esteban updated the uml diagrams for the workLoad and Channel classes, as well as developed javadoc comments for the methods listed above.
+-we removed createFooter() in Channel Visualization since we were not using it
 
-- We are not sure if the graph is showing properly so we may need to fix that in the next sprint
+-in Channel Analysis, we created buildtable(), which will use parsed information from WarpDSL to create a new table based on their flow, source, sink
+
+-in Channel Analysis, we added isSameCoordinator() to see if there is a channel conflict, if so will change flag to true
+
+-in Channel Analysis, we added initializaProgram() to start the warpdsl and get variables
+ 
+-in Channel Visualization, a couple methods were modified to hopefully correct errors in sprint2. These methods were createColumnHeader(), createHeader(), and createVisualizationData()
+
+-in the end we were not able to fully implement the graph transformation as desired in the assignment, we believe we got close
+
+-the only high level plans are right here in this README
