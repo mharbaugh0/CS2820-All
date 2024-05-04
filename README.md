@@ -8,25 +8,27 @@ the value of software development fundamentals!
 ~ software development is cool ~ 
 
 
-<b> Sprint 3 distribution: </b>
-
-- Weipeng: Step 2 & 5
-- Matt: Step 3 
-- Dell: Step 1 
-- Esteban: Steps 2 & 4
-- All: Step 3
-
-Diagrams and design documents for Sprint 3: 
-- Updated README with sprint objectives outlined and tasks delegated
-- Updated UML diagrams, located in the source folder
-- Updated sequence diagram, located in the 'architecture' folder
-- Updated JavaDoc comments explaining code purpose, parameters, and protection level throughout, 
-and regenerated JavaDoc files located in the 'doc' folder
-- JUnit tests for the ChannelVisualization and ChannelAnalysis classes, located in the 'test' folder 
-
-
 <br>
-For Sprint 3, all team members worked to correct the data presented in the ChannelVisualization table. 
-Each team member also took the lead in another area to complete Steps 1-5 as described above. 
-Because Steps 3 & 5 contributed the most points to the Sprint, we took extra time to ensure they worked correctly 
-and followed the style guide as outlined by the course. 
+-Updated by Matt
+
+-For Sprint 3. Esteban and Matt worked on the code for Channel Analysis and Channel Visualization. We were able to create a dummy table
+ 
+-Dell and Weipeng worked on the tests for Channel Analysis and Visualization, located in the "test" folder
+
+-Esteban and Matt updated javadoc comments while Esteban generated them, located in the "doc" folder
+
+-Weipeng made the sequence diagrams and Esteban edited them, located in the "architecture"
+
+-we removed createFooter() in Channel Visualization since we were not using it
+
+-in Channel Analysis, we created buildtable(), which will use parsed information from WarpDSL to create a new table based on their flow, source, sink
+
+-in Channel Analysis, we added isSameCoordinator() to see if there is a channel conflict, if so will change flag to true
+
+-in Channel Analysis, we added initializaProgram() to start the warpdsl and get variables
+ 
+-in Channel Visualization, a couple methods were modified to hopefully correct errors in sprint2. These methods were createColumnHeader(), createHeader(), and createVisualizationData()
+
+-in the end we were not able to fully implement the graph transformation as desired in the assignment, we believe we got close
+
+-the only high level plans are right here in this README
