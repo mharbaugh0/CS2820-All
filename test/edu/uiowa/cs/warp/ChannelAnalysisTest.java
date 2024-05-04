@@ -18,6 +18,9 @@ class ChannelAnalysisTest {
 	String inputFile = "ExampleX.txt";
 	Integer nChannels = 16;
 	ScheduleChoices choice;
+    Program program;
+    WarpDSL warpDSL;
+    ProgramSchedule programSchedule;
 
 
 	@Test
@@ -43,13 +46,13 @@ class ChannelAnalysisTest {
 	}
 	
 	
-	/*@Test
+	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
 	public void testGetChannelAnalysisTable() {
-		ProgramSchedule temp = new ProgramSchedule();
-		temp = channelAnalysis.getChannelAnalysisTable();
+        ChannelAnalysis ca = new ChannelAnalysis(program, warpDSL);
+        var temp = ca.getChannelAnalysisTable();
 		assertNotNull(temp);
-	}*/
+	}
 	
 	@Test
 	@Timeout(value = 2000, unit = TimeUnit.MILLISECONDS)
