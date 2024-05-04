@@ -15627,11 +15627,11 @@ Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
   <UMLLabProfile:Reference xmi:id="_EMkwIv6qEe6xldDwZq2PWA" base_Element="_EMkwIP6qEe6xldDwZq2PWA"/>
   <UMLLabProfile:Reference xmi:id="_EMkwJf6qEe6xldDwZq2PWA" base_Element="_EMkwI_6qEe6xldDwZq2PWA"/>
   <UMLLabProfile:Reference xmi:id="_EMkwKP6qEe6xldDwZq2PWA" base_Element="_EMkwJv6qEe6xldDwZq2PWA"/>
-  <UMLLabProfile:Patch xmi:id="_HlTmgP6qEe6xldDwZq2PWA" base_Element="_UHUcUPX8Ee6XCaOv3hKt5A" patchText="@@ -345,12 +345,8 @@&#xA; tate&#xA;-()()&#xA;  %7B%0A%09&#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_HlTmgP6qEe6xldDwZq2PWA" base_Element="_UHUcUPX8Ee6XCaOv3hKt5A" patchText="@@ -345,12 +345,8 @@&#xA; tate&#xA;-()()&#xA;  %7B%0A%09&#xA;" conflicting="true"/>
   <UMLLabProfile:Patch xmi:id="_HlU0oP6qEe6xldDwZq2PWA" base_Element="_UHs2zvX8Ee6XCaOv3hKt5A" patchText="@@ -113,12 +113,8 @@&#xA; ices&#xA;-()()&#xA;  %7B%0A%09&#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_HlU0of6qEe6xldDwZq2PWA" base_Element="_UHur8PX8Ee6XCaOv3hKt5A" patchText="@@ -134,28 +134,24 @@&#xA; ystemChoices&#xA;-()()&#xA;  %7B%0A    SOURC&#xA;@@ -273,12 +273,8 @@&#xA; ices&#xA;-()()&#xA;  %7B%0A &#xA;" conflicting="false"/>
   <UMLLabProfile:Patch xmi:id="_HlU0ov6qEe6xldDwZq2PWA" base_Element="_UH65MPX8Ee6XCaOv3hKt5A" patchText="@@ -130,122 +130,8 @@&#xA; %0A */&#xA;-%0Aimport edu.uiowa.cs.warp.WarpDSL.InstructionParameters;%0D%0Aimport edu.uiowa.cs.warp.WarpDSL.InstructionParameters;%0D&#xA; %0A%0Aim&#xA;" conflicting="false"/>
-  <UMLLabProfile:Patch xmi:id="_HlVbsP6qEe6xldDwZq2PWA" base_Element="_UH8uYPX8Ee6XCaOv3hKt5A" patchText="@@ -4029,21 +4029,25 @@&#xA; wf, ra)%0A&#xA;-publi&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_HlVbsP6qEe6xldDwZq2PWA" base_Element="_UH8uYPX8Ee6XCaOv3hKt5A" patchText="@@ -4029,21 +4029,25 @@&#xA; wf, ra)%0A&#xA;-publi&#xA;+  private&#xA;  static &#xA;" conflicting="true"/>
   <UMLLabProfile:Patch xmi:id="_327dEAJiEe-mgONtUl1l9w" base_Element="_UHcYEPX8Ee6XCaOv3hKt5A" patchText="@@ -242,22 +242,25 @@&#xA;  MISS%22;%0A&#xA;-public&#xA;+  private&#xA;  static &#xA;" conflicting="false"/>
   <UMLLabProfile:Generics xmi:id="_ii6LMAnIEe-XjPzZLDyV2w" genericsValue="InstructionParameters" base_Element="_ii4WAgnIEe-XjPzZLDyV2w"/>
   <UMLLabProfile:Reference xmi:id="_ijTz0AnIEe-XjPzZLDyV2w" base_Element="_ijSlsAnIEe-XjPzZLDyV2w"/>
