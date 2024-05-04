@@ -1,18 +1,18 @@
 package edu.uiowa.cs.warp;
 
-
 import java.util.ArrayList;
 import java.lang.StringBuilder;
 import edu.uiowa.cs.warp.WarpDSL.InstructionParameters;
+
 /**
-* ChannelAnalysis.java Analyzes the warp and program channels for conflicts.
-*
-* Created by Steve Goddard Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
-*
-* @author sgoddard
-* @version 1.7
-*
-*/
+ * ChannelAnalysis.java Analyzes the warp and program channels for conflicts.
+ *
+ * Created by Steve Goddard Modified by Dell Harbaugh and Sixuan Liu 02/07/2024
+ *
+ * @author sgoddard
+ * @version 1.7
+ *
+ */
 // Use Eclipse to refactor the constructors of the ChannelAnalysis class to reduce code duplication.
 // Hint: this is a great example where you can call one constructor from the other using the call
 // this(), with the proper parameter. This was done as an example in Lecture 8 Inheritance.
@@ -22,6 +22,7 @@ public class ChannelAnalysis {
 	private Boolean conflictExists;
 	private WarpDSL warpDSL;
 	public ProgramSchedule caTable;
+
 	/**
 	 * Inherits parameters from initialized program method to create constructor
 	 *
@@ -30,6 +31,7 @@ public class ChannelAnalysis {
 	public ChannelAnalysis(WarpInterface warp) {
 		initializeProgram(warp.toProgram(), warpDSL);
 	}
+
 	/**
 	 * Inherits parameters from initialized program method to create constructor
 	 *
@@ -38,6 +40,7 @@ public class ChannelAnalysis {
 	public ChannelAnalysis(Program program, WarpDSL warpDSL) {
 		initializeProgram(program, warpDSL);
 	}
+
 	/**
 	 * Initializing program with program and overriding the constructor
 	 *
@@ -51,6 +54,7 @@ public class ChannelAnalysis {
 		this.warpDSL = warpDSL;
 		this.caTable = new ProgramSchedule(programTable.getNumRows(), programTable.getNumColumns());
 	}
+
 	/**
 	 *
 	 * @param warpDSL this is using the class to get parameters from Intruction
@@ -87,9 +91,11 @@ public class ChannelAnalysis {
 							params2.getSrc(), params2.getSnk()));
 				}
 			}
-			caTable.set(programTable.getNumRows(),programTable.getNumColumns(), caTable.get(programTable.getNumRows(), programTable.getNumColumns()) + entry.toString());
+			caTable.set(programTable.getNumRows(), programTable.getNumColumns(),
+					caTable.get(programTable.getNumRows(), programTable.getNumColumns()) + entry.toString());
 		}
 	}
+
 	/**
 	 *
 	 * @param coordinator    This takes the src node from the transmission
@@ -102,12 +108,13 @@ public class ChannelAnalysis {
 	public boolean isSameCoordinator(String coordinator, ArrayList<InstructionParameters> parametersList) {
 		for (InstructionParameters params : parametersList) {
 			if (params.getCoordinator().equals(coordinator)) {
-				conflictExists =true;
+				conflictExists = true;
 				return true;
 			}
 		}
 		return false;
 	}
+
 	/**
 	 * Program Schedule just returns the finished table from channel analysis using
 	 * parsed information from it.
@@ -116,7 +123,9 @@ public class ChannelAnalysis {
 	 */
 	ProgramSchedule getChannelAnalysisTable() {
 		return caTable;
+
 	}
+
 	/**
 	 * Checks for program channel conflicts
 	 *

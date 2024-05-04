@@ -93,7 +93,7 @@ public class ChannelVisualization extends VisualizationObject {
 	public String[] createColumnHeader() {
 		var timeSlots = schedule.getNumColumns();
 		String[] columnNames = new String[timeSlots + 1];
-		columnNames[0] = "Time Slot/";
+		columnNames[0] = "Time Slot/Channel";
 		for (int i = 0; i < timeSlots; i++) {
 			columnNames[i + 1] = String.format("%d", i);
 
