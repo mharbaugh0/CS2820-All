@@ -5,11 +5,10 @@ research project. It was first written in Swift and rewritten in Java. It was th
 rewritten again in an object-oriented programming style. It was a quick
 hack, and it needs a lot of cleanup and refactoring. A perfect code base to teach
 the value of software development fundamentals!
-~ software development is cool ~ 
+
 
 
 <br>
--Updated by Matt
 
 -For Sprint 3. Esteban and Matt worked on the code for Channel Analysis and Channel Visualization. We were able to create a dummy table
  
